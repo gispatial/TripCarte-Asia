@@ -48,6 +48,13 @@ npm run serve or yarn serve
 - Local:   http://localhost:8080/ 
 - Network: http://192.168.0.114:8080/
 ```
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>.
+
 
 # About Tripcarte.Asia Dashboard Portal Project
 
