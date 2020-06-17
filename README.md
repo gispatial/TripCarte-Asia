@@ -1,2 +1,2 @@
-# tdmp-api
- tripcarte-dashboard-management-portal-api
+# tdmp-merchants
+ TDMP-MERCHANTS-FRONTEND-VUE
