@@ -1,5 +1,5 @@
 # tdmp-merchants
- TDMP-MERCHANTS-FRONTEND-VUE
+ TDMP-MERCHANTS-FRONTEND-VUE-WITH-API
  
 # Project setup
 
@@ -52,4 +52,4 @@ npm run serve or yarn serve
 
 # About Tripcarte.Asia Dashboard Project
 
-We are very strong with anykind of fullstack productions and devops. The Official Department for Netquest Solutions S/B Software Engineering Developing Team.
+We are very strong with anykind of fullstack development and devops. The Official Department for Netquest Solutions S/B. Netquest Solutions Software Engineering Development Team.
