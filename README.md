@@ -11,7 +11,8 @@ $ npm install or $ yarn
 Compiles and hot-reloads for development:
 
 - npm run serve
-- yarn serveApp running at:
+- yarn serve 
+- App running at:
 - Local:   http://localhost:8080/ 
 - Network: http://192.168.0.114:8080/
 
