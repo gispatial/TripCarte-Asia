@@ -45,8 +45,8 @@ export default {
       return Promise.reject(error)
     })
   },
-  login(email, pwd) {
-    return axios.post("/api/auth/login", {email: email, password: pwd})
+  login(uname, pwd) {
+    return axios.post("https://demo.travelasia.com.my/wp-json/jwt-auth/v1/token", {username: uname, password: pwd})
   },
   registerUser(name, email, pwd) {
     return axios.post("/api/auth/register", {displayName: name, email: email, password: pwd})

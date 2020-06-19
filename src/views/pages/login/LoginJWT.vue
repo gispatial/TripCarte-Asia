@@ -1,20 +1,20 @@
 <template>
   <div>
     <vs-input
-        v-validate="'required|email|min:3'"
+        v-validate="'required'"
         data-vv-validate-on="blur"
-        name="email"
+        name="username"
         icon-no-border
         icon="icon icon-user"
         icon-pack="feather"
-        label-placeholder="Email"
-        v-model="email"
+        label-placeholder="Username"
+        v-model="username"
         class="w-full"/>
-    <span class="text-danger text-sm">{{ errors.first('email') }}</span>
+    <span class="text-danger text-sm">{{ errors.first('username') }}</span>
 
     <vs-input
         data-vv-validate-on="blur"
-        v-validate="'required|min:6|max:10'"
+        v-validate="'required'"
         type="password"
         name="password"
         icon-no-border
@@ -40,14 +40,14 @@
 export default {
   data() {
     return {
-      email: 'info@tripcarte.asia',
-      password: '1234',
+      username: '',
+      password: '',
       checkbox_remember_me: false
     }
   },
   computed: {
     validateForm() {
-      return !this.errors.any() && this.email != '' && this.password != '';
+      return !this.errors.any() && this.username != '' && this.password != '';
     },
   },
   methods: {
@@ -80,7 +80,7 @@ export default {
       const payload = {
         checkbox_remember_me: this.checkbox_remember_me,
         userDetails: {
-          email: this.email,
+          username: this.username,
           password: this.password
         }
       }
@@ -100,7 +100,7 @@ export default {
     },
     registerUser() {
       if (!this.checkLogin()) return
-      this.$router.push('/pages/register').catch(() => {})
+        window.open('https://tripcarte.asia/registration/', '_blank');
     }
   }
 }
