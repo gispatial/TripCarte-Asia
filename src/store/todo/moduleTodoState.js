@@ -9,6 +9,7 @@
 
 
 export default {
+    reviews: [],
     tasks: [],
     taskTags: [],
     todoSearchQuery: '',

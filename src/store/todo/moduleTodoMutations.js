@@ -9,6 +9,12 @@
 
 
 export default {
+
+    SET_REVIEWS (state, reviews){
+      state.reviews = reviews
+    },
+
+  
     SET_TODO_SEARCH_QUERY(state, query) {
         state.todoSearchQuery = query
     },
@@ -30,4 +36,5 @@ export default {
       const taskIndex = state.tasks.findIndex((t) => t.id == task.id)
       Object.assign(state.tasks[taskIndex], task)
     }
+    
 }

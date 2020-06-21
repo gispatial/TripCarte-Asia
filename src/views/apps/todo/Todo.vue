@@ -25,27 +25,37 @@
                         <feather-icon class="md:inline-flex lg:hidden ml-4 mr-4 cursor-pointer" icon="MenuIcon" @click.stop="toggleTodoSidebar(true)" />
 
                         <!-- SEARCH BAR -->
-                        <vs-input icon-no-border size="large" icon-pack="feather" icon="icon-search" placeholder="Search..." v-model="searchQuery" class="vs-input-no-border vs-input-no-shdow-focus w-full" />
+                        <vs-input icon-no-border size="large" icon-pack="feather" icon="icon-search" placeholder="Search.." v-model="searchQuery" class="vs-input-no-border vs-input-no-shdow-focus w-full" />
                     </div>
 
-                    <!-- TODO LIST -->
+                    <!-- 
                     <VuePerfectScrollbar class="todo-content-scroll-area" :settings="settings" ref="taskListPS" :key="$vs.rtl">
                         <transition-group class="todo-list" name="list-enter-up" tag="ul" appear>
                             <li class="cursor-pointer todo_todo-item" v-for="(task, index) in taskList" :key="String(currFilter) + String(task.id)" :style="[{transitionDelay: (index * 0.1) + 's'}]">
 
                                 <todo-task :taskId="task.id" @showDisplayPrompt="showDisplayPrompt($event)" :key="String(task.title) + String(task.desc)" />
-                                <!--
+                                
                                   Note: Remove "todo-task" component's key just concat lastUpdated field in li key list.
                                   e.g. <li class="..." v-for="..." :key="String(currFilter) + String(task.id) + String(task.lastUpdated)" .. >
-                                -->
+                                
                             </li>
                         </transition-group>
                     </VuePerfectScrollbar>
-                    <!-- /TODO LIST -->
+                    -->
+
+                    <VuePerfectScrollbar class="todo-content-scroll-area" :settings="settings" ref="taskListPS" :key="$vs.rtl">
+                        <transition-group class="todo-list" name="list-enter-up" tag="ul" appear>
+                            <li class="cursor-pointer todo_todo-item"  v-for="(review, key) in reviews" :key="key"  :style="[{transitionDelay: (key * 0.1) + 's'}]">
+                                <todo-task :review="review" @showDisplayPrompt="showDisplayPrompt($event)" :key="String(review.product_id) + String(review.rating)" />
+                                
+                            </li>
+                        </transition-group>
+                    </VuePerfectScrollbar>
                 </div>
 
-                <!-- EDIT TODO DIALOG -->
+                <!-- EDIT TODO DIALOG 
                 <todo-edit :displayPrompt="displayPrompt" :taskId="taskIdToEdit" @hideDisplayPrompt="hidePrompt" v-if="displayPrompt"></todo-edit>
+                -->
     </div>
 </template>
 
@@ -56,10 +66,13 @@ import TodoTask            from "./TodoTask.vue"
 import TodoFilters         from "./TodoFilters.vue"
 import TodoEdit            from "./TodoEdit.vue"
 import VuePerfectScrollbar from 'vue-perfect-scrollbar'
+import axios from "../../../http/axios/index.js"
 
 export default {
   data() {
+    
     return {
+      //post: null,
       currFilter           : "",
       clickNotClose        : true,
       displayPrompt        : false,
@@ -70,8 +83,10 @@ export default {
         wheelSpeed         : 0.30,
       },
     }
+    
   },
   watch: {
+    
     todoFilter() {
       this.$refs.taskListPS.$el.scrollTop = 0
       this.toggleTodoSidebar()
@@ -81,11 +96,13 @@ export default {
       this.$store.dispatch("todo/fetchTasks", { filter: filter })
       this.$store.commit("todo/UPDATE_TODO_FILTER", filter)
     },
+    
     windowWidth() {
       this.setSidebarWidth()
     },
   },
   computed: {
+    reviews()     { return this.$store.state.todo.reviews                     },
     todo()        { return this.$store.state.todo.todoArray              },
     todoFilter()  { return this.$route.params.filter                     },
     taskList()    { return this.$store.getters["todo/queriedTasks"]      },
@@ -94,7 +111,9 @@ export default {
       set(val)    { this.$store.dispatch('todo/setTodoSearchQuery', val) }
     },
     windowWidth() { return this.$store.state.windowWidth }
+    
   },
+  
   methods: {
     showDisplayPrompt(itemId) {
       this.taskIdToEdit  = itemId
@@ -115,16 +134,19 @@ export default {
       this.isSidebarActive = value
     },
   },
+  
   components: {
     TodoTask,
     TodoFilters,
     TodoEdit,
     VuePerfectScrollbar
   },
+  
   created() {
     this.$store.registerModule('todo', moduleTodo)
+    
     this.setSidebarWidth()
-
+    
     let filter = this.$route.params.filter
 
     // Fetch Tasks
@@ -133,15 +155,22 @@ export default {
 
     // Fetch Tags
     this.$store.dispatch("todo/fetchTags")
+
+    
+    
   },
+  
   beforeUpdate() {
     this.currFilter = this.$route.params.filter
   },
   beforeDestroy: function() {
     this.$store.unregisterModule('todo')
   },
+  
   mounted() {
+    this.$store.dispatch("todo/getReviews")
     this.$store.dispatch("todo/setTodoSearchQuery", "")
+    
   }
 }
 

@@ -13,17 +13,27 @@
         <div class="vx-row">
             <div class="vx-col w-full sm:w-5/6 flex sm:items-center sm:flex-row flex-col">
                 <div class="flex items-center">
+                  <!--
                     <vs-checkbox v-model="isCompleted" class="w-8 m-0 vs-checkbox-small" @click.stop />
                     <h6 class="todo-title" :class="{'line-through': taskLocal.isCompleted}">{{ taskLocal.title }}</h6>
+                  -->
+                    <vs-checkbox class="w-8 m-0 vs-checkbox-small" @click.stop />
+                    <h6 class="todo-title">{{ review.product_name }}</h6>
                 </div>
                 <div class="todo-tags sm:ml-2 sm:my-0 my-2 flex">
+                  <!--
                     <vs-chip v-for="(tag, index) in taskLocal.tags" :key="index">
                         <div class="h-2 w-2 rounded-full mr-1" :class="'bg-' + todoLabelColor(tag)"></div>
                         <span>{{ tag | capitalize }}</span>
                     </vs-chip>
+                  -->
+                  <vs-chip>
+                        <div class="h-2 w-2 rounded-full mr-1" :class="'bg-success'"></div>
+                        <span>{{  review.timing }}</span>
+                  </vs-chip>
                 </div>
             </div>
-
+            <!--
             <div class="vx-col w-full sm:w-1/6 ml-auto flex sm:justify-end">
                 <feather-icon
                   icon="InfoIcon"
@@ -43,25 +53,38 @@
                   svgClasses="w-5 h-5"
                   @click.stop="moveToTrash" />
             </div>
+            -->
         </div>
+        <!--
         <div class="vx-row" v-if="taskLocal.desc">
             <div class="vx-col w-full">
                 <p class="mt-2 truncate" :class="{'line-through': taskLocal.isCompleted}">{{ taskLocal.desc }}</p>
+            </div>
+        </div>
+        -->
+        <div class="vx-row">
+            <div class="vx-col w-full">
+                <p class="mt-2 truncate">{{ review.extra }}</p>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import axios from '../../../axios'
 export default{
-    props: {
+    props: ["review"],
+    /*
+    {
         taskId: {
             type: Number,
             required: true,
         }
-    },
+    },*/
+    
     data() {
         return {
+          //review: post, 
           taskLocal: this.$store.getters["todo/getTask"](this.taskId)
         }
     },
@@ -119,5 +142,18 @@ export default{
           this.$emit('showDisplayPrompt', this.taskId)
         }
     },
+    mounted() {
+      this.$store.dispatch("todo/getReviews");
+    }
+    /*
+    created: function() {
+    axios
+      .get("https://demo.travelasia.com.my/wp-json/tripcarte_api/v1/reviews",  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } } )
+      .then(res => {
+        this.post = res.data;
+      })
+  }
+  */
+  
 }
 </script>

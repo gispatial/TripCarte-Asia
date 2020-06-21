@@ -8,8 +8,21 @@
 ==========================================================================================*/
 
 import axios from "@/axios.js"
+import { resolve } from "core-js/fn/promise"
 
 export default {
+
+    getReviews({commit}) {
+      return new Promise((resolve, reject) => {
+        axios.get("https://demo.travelasia.com.my/wp-json/tripcarte_api/v1/reviews",  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } } )
+          .then(res => {
+            commit('SET_REVIEWS', res.data)
+            resolve(res)
+          })
+          .catch((error) => { reject(error) })
+      })
+    },
+    
     setTodoSearchQuery({ commit }, query){
         commit('SET_TODO_SEARCH_QUERY', query)
     },
@@ -23,7 +36,7 @@ export default {
           .catch((error) => { reject(error) })
       })
     },
-
+    
     fetchTags({ commit }) {
       return new Promise((resolve, reject) => {
         axios.get("/api/apps/todo/tags")
@@ -34,7 +47,7 @@ export default {
           .catch((error) => { reject(error) })
       })
     },
-
+    
     addTask({ commit }, task) {
       return new Promise((resolve, reject) => {
         axios.post("/api/apps/todo/tasks/", {task: task})
@@ -56,4 +69,5 @@ export default {
           .catch((error) => { reject(error) })
       })
     }
+    
 }
