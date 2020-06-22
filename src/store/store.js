@@ -24,6 +24,7 @@ Vue.use(Vuex)
 // import moduleEmail from './email/moduleEmail.js'
 import moduleAuth from './auth/moduleAuth.js'
 import moduleECommerce from './eCommerce/moduleECommerce.js'
+import moduleCommission from './commission/moduleCommission.js'
 
 
 export default new Vuex.Store({
@@ -38,6 +39,7 @@ export default new Vuex.Store({
         // email: moduleEmail,
         auth: moduleAuth,
         eCommerce: moduleECommerce,
+        commission: moduleCommission
     },
     strict: process.env.NODE_ENV !== 'production'
 })

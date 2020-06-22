@@ -75,6 +75,7 @@
 <script>
 import { AgGridVue } from "ag-grid-vue"
 import contacts from './data.json'
+import moduleCommission from "@/store/commission/moduleCommission.js"
 
 import '@/assets/scss/vuexy/extraComponents/agGridStyleOverride.scss'
 
@@ -161,6 +162,7 @@ export default {
     }
   },
   computed: {
+    payouts()     { return this.$store.state.commission.commissions },
     paginationPageSize() {
       if(this.gridApi) return this.gridApi.paginationGetPageSize()
       else return 50
@@ -184,7 +186,14 @@ export default {
       this.gridApi.setQuickFilter(val)
     }
   },
+  created() {
+    if(!moduleCommission.isRegistered) {
+      this.$store.registerModule('commission', moduleComission)
+      moduleComission.isRegistered = true
+    }
+  },
   mounted() {
+    this.$store.dispatch("commission/getCommissions")
     this.gridApi = this.gridOptions.api
 
     /* =================================================================
