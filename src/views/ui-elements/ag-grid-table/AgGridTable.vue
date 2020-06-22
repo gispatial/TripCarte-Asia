@@ -19,7 +19,7 @@
         <div class="mb-4 md:mb-0 mr-4 ag-grid-table-actions-left">
           <vs-dropdown vs-trigger-click class="cursor-pointer">
             <div class="p-4 border border-solid d-theme-border-grey-light rounded-full d-theme-dark-bg cursor-pointer flex items-center justify-between font-medium">
-              <span class="mr-2">{{ currentPage * paginationPageSize - (paginationPageSize - 1) }} - {{ contacts.length - currentPage * paginationPageSize > 0 ? currentPage * paginationPageSize : contacts.length }} of {{ contacts.length }}</span>
+              <span class="mr-2">{{ currentPage * paginationPageSize - (paginationPageSize - 1) }} - {{ payouts.length - currentPage * paginationPageSize > 0 ? currentPage * paginationPageSize : payouts.length }} of {{ payouts.length }}</span>
               <feather-icon icon="ChevronDownIcon" svgClasses="h-4 w-4" />
             </div>
             <!-- <vs-button class="btn-drop" type="line" color="primary" icon-pack="feather" icon="icon-chevron-down"></vs-button> -->
@@ -53,7 +53,7 @@
         class="ag-theme-material w-100 my-4 ag-grid-table"
         :columnDefs="columnDefs"
         :defaultColDef="defaultColDef"
-        :rowData="contacts"
+        :rowData="payouts"
         rowSelection="multiple"
         colResizeDefault="shift"
         :animateRows="true"
@@ -74,7 +74,7 @@
 
 <script>
 import { AgGridVue } from "ag-grid-vue"
-import contacts from './data.json'
+//import contacts from './data.json'
 import moduleCommission from "@/store/commission/moduleCommission.js"
 
 import '@/assets/scss/vuexy/extraComponents/agGridStyleOverride.scss'
@@ -97,59 +97,58 @@ export default {
       },
       columnDefs: [
         {
-          headerName: 'Commission',
-          field: 'firstname',
-          width: 175,
-          filter: true,
-          checkboxSelection: true,
-          headerCheckboxSelectionFilteredOnly: true,
-          headerCheckboxSelection: true,
-        },
-        {
-          headerName: 'Item',
-          field: 'lastname',
+          headerName: 'ID',
+          field: 'id',
           filter: true,
           width: 175,
         },
         {
-          headerName: 'Order ID',
-          field: 'email',
+          headerName: 'Status',
+          field: 'commission_status',
+          width: 175,
           filter: true,
-          width: 250,
-          pinned: 'left'
+          //checkboxSelection: true,
+          //headerCheckboxSelectionFilteredOnly: true,
+          //headerCheckboxSelection: true,
+        },
+        {
+          headerName: 'Product Amount (RM)',
+          field: 'product_amount',
+          filter: true,
+          width: 220,
+        },
+        {
+          headerName: 'Qty Product',
+          field: 'product_quantity',
+          filter: true,
+          width: 175,
         },
         {
           headerName: 'Qty Redeemed',
-          field: 'company',
+          field: 'redeem_qty',
           filter: true,
-          width: 250,
+          width: 175,
         },
         {
           headerName: 'Date Redeemed',
-          field: 'city',
+          field: 'redeem_date_gmt',
           filter: true,
-          width: 150,
+          width: 220,
         },
         {
-          headerName: 'Rp Stats',
-          field: 'country',
+          headerName: 'Status',
+          field: 'commission_status',
           filter: true,
-          width: 150,
+          width: 175,
         },
         {
-          headerName: 'Pymt Stats',
-          field: 'state',
+          headerName: 'Payment Date',
+          field: 'paid_date',
           filter: true,
-          width: 125,
-        },
-        {
-          headerName: 'Pymt Date',
-          field: 'zip',
-          filter: true,
-          width: 125,
+          width: 220,
         },
       ],
-      contacts: contacts,
+      //contacts: contacts,
     }
   },
   watch: {
