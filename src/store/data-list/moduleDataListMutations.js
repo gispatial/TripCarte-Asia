@@ -9,6 +9,9 @@
 
 
 export default {
+  SET_REDEMPTIONS (state, redemptions){
+    state.redemptions = redemptions
+  },
   ADD_ITEM(state, item) {
     state.products.unshift(item)
   },

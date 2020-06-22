@@ -100,6 +100,39 @@
         <vs-th>Redeemed Qty</vs-th>
       </template>
 
+        <template>
+          <tbody>
+            <vs-tr :key="keys" v-for="(rd, keys) in redemptions">
+
+              <vs-td>
+                <p class="product-name">{{ rd.order_id }}</p>
+              </vs-td>
+
+              <vs-td>
+                <p class="product-category font-medium truncate">{{ rd.name }}</p>
+              </vs-td>
+
+              <vs-td>
+                <vs-progress :percent="Number(rd.id)" :color="getPopularityColor(Number(rd.id))" class="shadow-md" />
+              </vs-td>
+
+              <vs-td>
+                <vs-chip :color="getOrderStatusColor(rd.id)" class="product-order-status">{{ rd.id | title }}</vs-chip>
+              </vs-td>
+
+              <vs-td>
+                <p class="product-price font-medium">{{ rd.timestamp }}</p>
+              </vs-td>
+
+              <vs-td>
+                <p>{{ rd.redeemed }}</p>
+              </vs-td>
+
+            </vs-tr>
+          </tbody>
+        </template>
+
+        <!--
         <template slot-scope="{data}">
           <tbody>
             <vs-tr :data="tr" :key="indextr" v-for="(tr, indextr) in data">
@@ -132,6 +165,7 @@
             </vs-tr>
           </tbody>
         </template>
+        -->
     </vs-table>
   </div>
 </template>
@@ -157,6 +191,7 @@ export default {
     }
   },
   computed: {
+    redemptions()     { return this.$store.state.dataList.redemptions },
     currentPage() {
       if(this.isMounted) {
         return this.$refs.table.currentx
@@ -206,8 +241,10 @@ export default {
       moduleDataList.isRegistered = true
     }
     this.$store.dispatch("dataList/fetchDataListItems")
+    //this.$store.dispatch("dataList/getRedemptions")
   },
   mounted() {
+    this.$store.dispatch("dataList/getRedemptions")
     this.isMounted = true;
   }
 }
