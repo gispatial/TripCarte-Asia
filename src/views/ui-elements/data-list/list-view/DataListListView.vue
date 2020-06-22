@@ -12,7 +12,7 @@
 
     <data-view-sidebar :isSidebarActive="addNewDataSidebar" @closeSidebar="toggleDataSidebar" :data="sidebarData" />
 
-    <vs-table ref="table" multiple v-model="selected" pagination :max-items="itemsPerPage" search :data="products">
+    <vs-table ref="table" multiple v-model="selected" pagination :max-items="itemsPerPage" search :data="redemptions">
 
       <div slot="header" class="flex flex-wrap-reverse items-center flex-grow justify-between">
 
@@ -69,7 +69,7 @@
         <!-- ITEMS PER PAGE -->
         <vs-dropdown vs-trigger-click class="cursor-pointer mb-4 mr-4 items-per-page-handler">
           <div class="p-4 border border-solid d-theme-border-grey-light rounded-full d-theme-dark-bg cursor-pointer flex items-center justify-between font-medium">
-            <span class="mr-2">{{ currentPage * itemsPerPage - (itemsPerPage - 1) }} - {{ products.length - currentPage * itemsPerPage > 0 ? currentPage * itemsPerPage : products.length }} of {{ queriedItems }}</span>
+            <span class="mr-2">{{ currentPage * itemsPerPage - (itemsPerPage - 1) }} - {{ redemptions.length - currentPage * itemsPerPage > 0 ? currentPage * itemsPerPage : redemptions.length }} of {{ queriedItems }}</span>
             <feather-icon icon="ChevronDownIcon" svgClasses="h-4 w-4" />
           </div>
           <!-- <vs-button class="btn-drop" type="line" color="primary" icon-pack="feather" icon="icon-chevron-down"></vs-button> -->
@@ -92,20 +92,20 @@
       </div>
 
       <template slot="thead">
-        <vs-th sort-key="name">Order ID</vs-th>
-        <vs-th sort-key="category">Item</vs-th>
-        <vs-th sort-key="popularity">Commission</vs-th>
-        <vs-th sort-key="order_status">Redempt Stats</vs-th>
+        <vs-th sort-key="name">ID</vs-th>
+        <vs-th sort-key="category">Product Name</vs-th>
+        <vs-th sort-key="popularity">Order ID</vs-th>
+        <vs-th sort-key="order_status">Product Variation</vs-th>
         <vs-th sort-key="price">Redeemed Date</vs-th>
         <vs-th>Redeemed Qty</vs-th>
       </template>
 
-        <template>
+        <template slot-scope="{data}">
           <tbody>
-            <vs-tr :key="keys" v-for="(rd, keys) in redemptions">
+            <vs-tr :data="tr" :key="keys" v-for="(rd, keys) in data">
 
               <vs-td>
-                <p class="product-name">{{ rd.order_id }}</p>
+                <p class="product-name">{{ rd.id }}</p>
               </vs-td>
 
               <vs-td>
@@ -113,12 +113,15 @@
               </vs-td>
 
               <vs-td>
-                <vs-progress :percent="Number(rd.id)" :color="getPopularityColor(Number(rd.id))" class="shadow-md" />
+                <!--<vs-progress :percent="Number(rd.id)" :color="getPopularityColor(Number(rd.id))" class="shadow-md" />-->
+                <p class="product-name">{{ rd.order_id }}</p>
               </vs-td>
 
+              <template>
               <vs-td>
-                <vs-chip :color="getOrderStatusColor(rd.id)" class="product-order-status">{{ rd.id | title }}</vs-chip>
+                <vs-chip :color="getOrderStatusColor(rd.meta_data)" class="product-order-status">{{ rd.meta_data | title }}</vs-chip>
               </vs-td>
+              </template>
 
               <vs-td>
                 <p class="product-price font-medium">{{ rd.timestamp }}</p>
@@ -181,8 +184,9 @@ export default {
   data() {
     return {
       selected: [],
+      //redemptions: [],
       // products: [],
-      itemsPerPage: 4,
+      itemsPerPage: 5,
       isMounted: false,
 
       // Data Sidebar
@@ -198,11 +202,14 @@ export default {
       }
       return 0
     },
+    /*
     products() {
       return this.$store.state.dataList.products
     },
+    */
     queriedItems() {
-      return this.$refs.table ? this.$refs.table.queriedResults.length : this.products.length
+      //return this.$refs.table ? this.$refs.table.queriedResults.length : this.products.length
+      return this.$refs.table ? this.$refs.table.queriedResults.length : this.redemptions.length
     }
   },
   methods: {
