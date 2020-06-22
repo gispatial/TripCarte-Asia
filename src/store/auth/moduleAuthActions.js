@@ -315,7 +315,7 @@ export default {
               localStorage.setItem("accessToken", response.data["token"])
 
               // Update user details
-              //commit('UPDATE_USER_INFO', response.data.userData, {root: true})
+              commit('UPDATE_USER_INFO', response.data, {root: true})
 
               // Set bearer token in axios
               //commit("SET_BEARER", response.data.accessToken)
