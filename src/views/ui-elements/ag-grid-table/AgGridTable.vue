@@ -187,8 +187,8 @@ export default {
   },
   created() {
     if(!moduleCommission.isRegistered) {
-      this.$store.registerModule('commission', moduleComission)
-      moduleComission.isRegistered = true
+      this.$store.registerModule('commission', moduleCommission)
+      moduleCommission.isRegistered = true
     }
   },
   mounted() {

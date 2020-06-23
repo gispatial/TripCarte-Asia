@@ -102,7 +102,7 @@
 
         <template slot-scope="{data}">
           <tbody>
-            <vs-tr :data="tr" :key="keys" v-for="(rd, keys) in data">
+            <vs-tr :data="rd" :key="keys" v-for="(rd, keys) in data">
 
               <vs-td>
                 <p class="product-name">{{ rd.id }}</p>
@@ -195,13 +195,13 @@ export default {
     }
   },
   computed: {
-    redemptions()     { return this.$store.state.dataList.redemptions },
     currentPage() {
       if(this.isMounted) {
         return this.$refs.table.currentx
       }
       return 0
     },
+    redemptions()     { return this.$store.state.dataList.redemptions },
     /*
     products() {
       return this.$store.state.dataList.products
@@ -247,12 +247,11 @@ export default {
       this.$store.registerModule('dataList', moduleDataList)
       moduleDataList.isRegistered = true
     }
-    this.$store.dispatch("dataList/fetchDataListItems")
-    //this.$store.dispatch("dataList/getRedemptions")
+    //this.$store.dispatch("dataList/fetchDataListItems")
   },
   mounted() {
     this.$store.dispatch("dataList/getRedemptions")
-    this.isMounted = true;
+    this.isMounted = true
   }
 }
 </script>
