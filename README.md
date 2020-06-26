@@ -20,7 +20,9 @@ Compiles and hot-reloads for development:
 
 ## Prerequisites
 
-You will need to have Node.js or Yarn installed in your machine. [url]https://nodejs.org/en/[/url]
+You will need to have Node.js or Yarn installed in your machine. 
+[![NodeJs](https://nodejs.org/en)]
+[url]https://nodejs.org/en/[/url]
 
 ## Steps
 
@@ -57,6 +59,13 @@ npm run serve or yarn serve
 
 ## Third-Party Plugins
 Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.
+
+### #agGrid Table
+Description: THE best javascript grid in the world
+
+Demo: Visit
+
+Docs: Documentation
 
 
 # About Tripcarte.Asia Dashboard Portal Project
