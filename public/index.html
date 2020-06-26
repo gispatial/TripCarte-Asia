@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>loader.css">
-    <title>Tripcarte CRM Dashboard-V1.0</title>
+    <link href="vue-qrcode-reader.css" rel="stylesheet">
+  	<script src="vue-qrcode-reader.browser.js"></script>
+    <title>Tripcarte.Asia Dashboard 1.0</title>
   </head>
   <body>
     <noscript>
@@ -15,6 +17,11 @@
     <div id="loading-bg">
       <div class="loading-logo">
         <img src="<%= BASE_URL %>logo.png" alt="Logo">
+      </div>
+      <div>
+        <qrcode-stream></qrcode-stream>
+        <qrcode-drop-zone></qrcode-drop-zone>
+        <qrcode-capture></qrcode-capture>
       </div>
       <div class="loading">
         <div class="effect-1 effects"></div>

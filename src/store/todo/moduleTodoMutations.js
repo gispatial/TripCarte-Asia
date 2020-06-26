@@ -2,9 +2,9 @@
   File Name: moduleTodoMutations.js
   Description: Todo Module Mutations
   ----------------------------------------------------------------------------------------
-  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
+  Item Name: Tripcarte.Asia Dashboard Management Portal
+    Author: Tripcarte.Asia
+  Staging URL: http://tripcarte.gispatial.tech/api
 ==========================================================================================*/
 
 
@@ -14,7 +14,7 @@ export default {
       state.reviews = reviews
     },
 
-  
+
     SET_TODO_SEARCH_QUERY(state, query) {
         state.todoSearchQuery = query
     },
@@ -36,5 +36,5 @@ export default {
       const taskIndex = state.tasks.findIndex((t) => t.id == task.id)
       Object.assign(state.tasks[taskIndex], task)
     }
-    
+
 }

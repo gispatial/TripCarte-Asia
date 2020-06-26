@@ -210,7 +210,7 @@ const router = new Router({
                             { title: 'User' },
                             { title: 'View', active: true },
                         ],
-                        pageTitle: 'User View',
+                        pageTitle: 'Profile Update',
                         rule: 'editor'
                     },
                 },
@@ -224,7 +224,7 @@ const router = new Router({
                             { title: 'User' },
                             { title: 'Edit', active: true },
                         ],
-                        pageTitle: 'User Edit',
+                        pageTitle: 'Admin User Update',
                         rule: 'editor'
                     },
                 },
@@ -321,10 +321,10 @@ const router = new Router({
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
-                            { title: 'Card' },
-                            { title: 'Statistics Cards', active: true },
+                            { title: 'Home' },
+                            { title: 'Admin Panel', active: true },
                         ],
-                        pageTitle: 'Statistics Card',
+                        pageTitle: 'FINANCE DASHBOARD',
                         rule: 'editor'
                     },
                 },
@@ -393,7 +393,7 @@ const router = new Router({
                             { title: 'redemption | Commission', active: true },
                         ],
                         pageTitle: 'Payouts',
-                        rule: 'editor'
+                        rule: 'admin'
                     },
                 },
 

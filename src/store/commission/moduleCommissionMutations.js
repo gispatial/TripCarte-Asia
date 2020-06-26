@@ -2,18 +2,18 @@
   File Name: moduleCommissionMutations.js
   Description: Commission Module Mutations
   ----------------------------------------------------------------------------------------
-  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
+  Item Name: Tripcarte.Asia Dashboard Management Portal
+    Author: Tripcarte.Asia
+  Staging URL: http://tripcarte.gispatial.tech/api
 ==========================================================================================*/
 
 
 export default {
-  
+
   SET_COMMISSIONS (state, commissions){
     state.commissions = commissions
   },
-  
+
   /*
   ADD_ITEM(state, item) {
     state.products.unshift(item)

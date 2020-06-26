@@ -3,8 +3,8 @@
     Description: Drag and Drop to multiple lists
     ----------------------------------------------------------------------------------------
     Item Name: Tripcarte.Asia Dashboard Management Portal
-      Author: Pixinvent
-    Author URL: http://www.themeforest.net/user/pixinvent
+      Author: Tripcarte.Dev
+    Author URL: http://tripcarte.asia/
 ========================================================================================== -->
 
 
@@ -29,14 +29,18 @@ Enter Barcode:
             </div>
         </div>
 
+
+  // ...
+))
+
         <template slot="codeContainer">
         </template>
     </vx-card>
 </template>
-
 <script>
 import draggable from 'vuedraggable'
 import Prism from 'vue-prism-component'
+import { QrcodeStream, QrcodeDropZone, QrcodeCapture } from 'vue-qrcode-reader'
 
 export default {
     data() {
@@ -81,7 +85,10 @@ export default {
     },
     components: {
         draggable,
-        Prism
+        Prism,
+        QrcodeStream,
+        QrcodeDropZone,
+        QrcodeCapture
     }
 }
 </script>

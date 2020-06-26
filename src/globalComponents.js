@@ -2,9 +2,9 @@
   File Name: globalComponents.js
   Description: Here you can register components globally
   ----------------------------------------------------------------------------------------
-  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
+	Item Name: TDMP - NETQUEST SOLUTIONS SB
+	Author: TripcarteDev
+	Author URL: http://tripcarte.gispatial.now.sh/
 ==========================================================================================*/
 
 

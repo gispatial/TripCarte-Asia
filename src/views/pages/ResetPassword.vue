@@ -3,8 +3,8 @@
     Description: Reset Password Page
     ----------------------------------------------------------------------------------------
     Item Name: Tripcarte.Asia Dashboard Management Portal
-      Author: Pixinvent
-    Author URL: http://www.themeforest.net/user/pixinvent
+    Author: TripcarteDev
+    Demo Staging URL: https://tdmp-merchants.gispatial.vercel.app/
 ========================================================================================== -->
 
 

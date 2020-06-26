@@ -63,8 +63,8 @@
 export default {
   data() {
     return {
-      email: 'demo@demo.com',
-      password: 'demodemo',
+      email: 'info@tripcarte.asia',
+      password: 'abcd1234!',
       checkbox_remember_me: false
     }
   },

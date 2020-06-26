@@ -2,9 +2,9 @@
   File Name: moduleChatActions.js
   Description: Chat Module Actions
   ----------------------------------------------------------------------------------------
-  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
+  Item Name: Tripcarte.Asia Dashboard Management Portal
+    Author: Tripcarte.Asia
+  Staging URL: http://tripcarte.gispatial.tech/api
 ==========================================================================================*/
 
 import axios from "@/axios.js"

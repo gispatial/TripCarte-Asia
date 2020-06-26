@@ -2,8 +2,9 @@
   File Name: moduleEmailState.js
   Description: Email Module State
   ----------------------------------------------------------------------------------------
-  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
+  Item Name: Tripcarte.Asia Dashboard Management Portal
+    Author: Tripcarte.Asia
+  Staging URL: http://tripcarte.gispatial.tech/api
   Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 

@@ -2,9 +2,9 @@
     File Name: CardBasic.vue
     Description: Basic Cards
     ----------------------------------------------------------------------------------------
-    Item Name: Tripcarte.Asia Dashboard Management Portal
-      Author: Pixinvent
-    Author URL: http://www.themeforest.net/user/pixinvent
+  	Item Name: TDMP - NETQUEST SOLUTIONS SB
+  	Author: TripcarteDev
+  	Author URL: http://tripcarte.gispatial.now.sh/
 ========================================================================================== -->
 
 <template>

@@ -2,9 +2,9 @@
   File Name: state.js
   Description: Vuex Store - state
   ----------------------------------------------------------------------------------------
-  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
+  Item Name: Tripcarte.Asia Dashboard Management Portal
+    Author: Tripcarte.Asia
+  Staging URL: http://tripcarte.gispatial.tech/api
 ==========================================================================================*/
 
 import navbarSearchAndPinList from "@/layouts/components/navbar/navbarSearchAndPinList"
@@ -19,7 +19,7 @@ import colors from "@/../themeConfig.js"
 const userDefaults = {
   uid         : 0,          // From Auth
   displayName : "Demo User", // From Auth
-  about       : "Dessert chocolate cake lemon drops jujubes. Biscuit cupcake ice cream bear claw brownie brownie marshmallow.",
+  about       : "About Lorem Ipsum.",
   photoURL    : require("@/assets/images/portrait/small/avatar-s-11.jpg"), // From Auth
   status      : "online",
   userRole    : "admin"

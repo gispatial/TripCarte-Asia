@@ -3,8 +3,8 @@
   Description: Profile Page
   ----------------------------------------------------------------------------------------
   Item Name: Tripcarte.Asia Dashboard Management Portal
-    Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
+  Author: TripcarteDev
+  Demo Staging URL: https://tdmp-merchants.gispatial.vercel.app/
 ========================================================================================== -->
 
 
@@ -63,28 +63,28 @@
 
                     <!-- USER BIO -->
                     <div class="user-bio">
-                        <p>Tart I love sugar plum I love oat cake. Sweet roll caramels I love jujubes. Topping cake wafer.</p>
+                        <p>Huge, popular aquarium with 200+ marine & freshwater species, a 3D theater & an underwater tunnel.</p>
                     </div>
 
                     <!-- OTEHR DATA -->
                     <div class="mt-5">
                         <h6>Joined:</h6>
-                        <p>November 15, 2015</p>
+                        <p>November 15, 2018</p>
                     </div>
 
                     <div class="mt-5">
                         <h6>Lives:</h6>
-                        <p>New York, USA</p>
+                        <p>Jalan Pantai Chenang, 07000 Langkawi, Kedah</p>
                     </div>
 
                     <div class="mt-5">
                         <h6>Email:</h6>
-                        <p>bucketful@fiendhead.org</p>
+                        <p>sitiraudhah_uwl@edenzil.com</p>
                     </div>
 
                     <div class="mt-5">
                         <h6>Website:</h6>
-                        <p>www.pixinvent.com</p>
+                        <p>www.underwaterworldlangkawi.my</p>
                     </div>
 
                     <div class="social-links flex mt-4">
@@ -223,7 +223,7 @@
             <div class="vx-col w-full lg:w-1/4">
 
                 <!-- LATEST PHOTOS -->
-                <vx-card title="Latest Photos" class="mt-base">
+                <vx-card title="Latest Post" class="mt-base">
                     <div class="vx-row pt-2">
                         <div class="vx-col w-1/2 sm:w-1/2 md:w-1/3 xl:1/4" v-for="(img, index) in userLatestPhotos" :key="index">
                             <img :src="img" alt="latest-upload" class="rounded mb-4 user-latest-image responsive">
@@ -302,7 +302,7 @@ export default {
       isNavOpen: false,
       userPoll: '',
       user_info: {
-        profile_img: require("@/assets/images/profile/user-uploads/user-13.jpg"),
+        profile_img: require("@/assets/images/profile/user-uploads/demo-admin.png"),
         cover_img: require("@/assets/images/profile/user-uploads/cover.jpg"),
       },
       mediaExtensions: { img: ['jpg', 'jpeg', 'png', 'bmp', 'gif', 'exif', 'tiff'], video: ['avi', 'flv', 'wmv', 'mov', 'mp4', '3gp'] },
@@ -317,7 +317,7 @@ export default {
         { name: 'Tonia Seabold', avatar: require("@/assets/images/portrait/small/avatar-s-12.jpg"), mutualFriends: 1 },
       ],
       userLatestPhotos: [
-        require("@/assets/images/profile/user-uploads/user-01.jpg"),
+        require("@/assets/images/profile/user-uploads/demo.jpg"),
         require("@/assets/images/profile/user-uploads/user-02.jpg"),
         require("@/assets/images/profile/user-uploads/user-04.jpg"),
         require("@/assets/images/profile/user-uploads/user-03.jpg"),
@@ -328,10 +328,10 @@ export default {
         require("@/assets/images/profile/user-uploads/user-09.jpg")
       ],
       userPosts: [{
-          author     : 'Leeanna Alvord',
+          author     : 'UnderWater World Admin',
           time       : 'Mon Dec 12 2018 07:46:05 GMT+0000 (GMT)',
           isLiked    : true,
-          text       : 'I love jujubes wafer pie ice cream tiramisu. Chocolate I love pastry pastry sesame snaps wafer. Pastry topping biscuit lollipop topping I love lemon drops sweet roll bonbon. Brownie donut icing.',
+          text       : 'The enchantment and wonders of the sea! Ever wondered what secrets the fishes hold? Or what it’s like to be close and personal with the creatures from the sea? If that’s what you yearn for, then you’re in for a visual treat at Underwater World Langkawi; one of the largest marine and freshwater aquaria in Southeast Asia.',
           media      : [{ img: require("@/assets/images/profile/post-media/2.jpg") }],
           likes      : 145,
           comments   : 77,
@@ -345,25 +345,25 @@ export default {
           commentbox : '',
           usersCommented: [
             {
-              comment : 'orthoplumbate morningtide naphthaline exarteritis',
-              author  : 'Kitty Allanson',
+              comment : 'Worth it for money! For those who plan to visit Langkawi, try to put Underwater World in your itinerary. Good place for family bonding to explore many thing underwater that i’ve never seen before. Love it!',
+              author  : 'SITI HARYANI BINTI MOHD YUSOF',
               img     : require("@/assets/images/portrait/small/avatar-s-6.jpg"),
-              time    : 'Mon Dec 10 2018 08:56:05 GMT+0000 (GMT)'
+              time    : 'Mon June 01 2020 08:56:05 GMT+0000 (GMT)'
             },
             {
-              comment : 'blockiness pandemy metaxylene speckle coppy',
-              author  : 'Jeanie Bulgrin',
+              comment : 'Easy to redeem.. Underwater world itself is just ok.. Nice to go if there nothing else to do..',
+              author  : 'Siti Noraini Abdul Samat',
               img     : require("@/assets/images/portrait/small/avatar-s-8.jpg"),
-              time    : 'Mon Dec 10 2018 08:55:00 GMT+0000 (GMT)'
+              time    : 'Mon March 02 2020 08:55:00 GMT+0000 (GMT)'
             },
           ]
         },
         {
-          author     : 'Leeanna Alvord',
-          time       : 'Mon Dec 11 2018 08:05:05 GMT+0000 (GMT)',
+          author     : 'UnderWater World Admin',
+          time       : 'Mon Dec 11 2019 08:05:05 GMT+0000 (GMT)',
           isLiked    : false,
-          text       : 'Candy jelly beans powder brownie biscuit. Jelly marzipan oat cake cake. Cupcake I love wafer cake. Halvah I love powder jelly I love cheesecake cotton candy tiramisu brownie.',
-          media      : [{ img: require("@/assets/images/profile/post-media/25.jpg") }],
+          text       : 'Here your eyes will be drawn to an array of tropical and exotic birds, animals and fishes. The ground and flight birds, the Flamingos, Black Swans, Mandarin Ducks, Golden Pheasants, Parakeets, Doves, Macaws, Laughing Thrush and more makes the entire atmosphere an absolute wonder for the eyes. Mostly, just a folk of friendly and inquisitive birds living the good life. Then gaze upon the Snapping Turtles as they come out of their shells and move about calmly and peacefully. Looking at them, you might think of them as some prehistoric creature from the Triassic Period and though calm in nature, these turtles have a tendency to snap or strike defensively when they feel threatened, and they are indeed capable of delivering a serious bite so keep your hands to yourself on this one!',
+          media      : [{ img: require("@/assets/images/profile/post-media/2.jpg") }],
           likes      : 276,
           comments   : 105,
           usersLiked : [
@@ -376,21 +376,21 @@ export default {
           commentbox: '',
           usersCommented: [
             {
-              comment : 'I love cupcake danish jujubes sweet.',
-              author  : 'Darcey Nooner',
+              comment : 'Interesting',
+              author  : 'Noor Shamiza Othman',
               img     : require("@/assets/images/portrait/small/avatar-s-8.jpg"),
               time    : 'Mon Dec 11 2018 09:56:05 GMT+0000 (GMT)'
             },
             {
-              comment : 'Wafer I love brownie jelly bonbon tart apple pie',
-              author  : 'Lai Lewandowski',
+              comment : 'Mudah… cepat and berbaloi harga lebih murah berbanding beli kat counter… terbaik!!!',
+              author  : 'Amir Afsham Bin A aziz',
               img     : require("@/assets/images/portrait/small/avatar-s-6.jpg"),
-              time    : 'Mon Dec 10 2018 09:50:00 GMT+0000 (GMT)'
+              time    : 'Mon Feb 26 2020 09:50:00 GMT+0000 (GMT)'
             },
           ]
         },
         {
-          author     : 'Leeanna Alvord',
+          author     : 'UnderWater World Admin',
           time       : 'Mon Dec 10 2018 12:05:05 GMT+0000 (GMT)',
           isLiked    : false,
           text       : 'Wafer I love brownie jelly bonbon tart. Candy jelly beans powder brownie biscuit. Jelly marzipan oat cake cake.',
@@ -434,7 +434,7 @@ export default {
       ],
       polls: [{
         id: 59,
-        title: 'Who is the best actor in Marvel Cinematic Universe?',
+        title: 'Where is the best underwater marine aqua located in Malaysia?',
         options: [{
             text       : 'RDJ',
             value      : 'rdj',

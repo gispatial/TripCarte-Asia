@@ -29,71 +29,58 @@ export default [
   // },
 
   {
-    header: "UI",
+    header: "MERCHANT PANEL",
     icon: "LayersIcon",
-    i18n: "UI",
+    i18n: "MERCHANT PANEL",
     items: [
     {
       url: null,
-      name: "Colors",
+      name: "DASHBOARD",
       slug: "colors",
-      icon: "ListIcon",
-      i18n: "Colors",
+      icon: "MonitorIcon",
+      i18n: "DASHBOARD",
+      tagColor: "dark",
+      tag: "New"
     },
     {
       url: '/ui-elements/ag-grid-table',
       name: "PAYOUTS",
-      tag: "new",
+      tag: "3",
       tagColor: "primary",
-      icon: "FolderIcon",
+      icon: "DollarSignIcon",
       i18n: "PAYOUTS",
     },
     {
       url: '/ui-elements/data-list/list-view',
       name: "REDEMPTIONS",
-      tag: "new",
+      tag: "5",
       tagColor: "primary",
-      icon: "FolderIcon",
+      icon: "AwardIcon",
       i18n: "REDEMPTIONS",
     },
       {
         url: '/apps/eCommerce/shop',
         name: "PRODUCTS",
-        tag: "new",
+        tag: "368",
         tagColor: "primary",
-        icon: "FolderIcon",
+        icon: "ShoppingBagIcon",
         i18n: "PRODUCTS",
       },
         {
           url: '/apps/todo/all',
           name: "REVIEWS",
-          tag: "new",
+          tag: "New",
           tagColor: "primary",
-          icon: "FolderIcon",
+          icon: "FeatherIcon",
           i18n: "REVIEWS",
         },
         {
   url: '/extensions/drag-and-drop',
   name: "SCAN TICKETS",
-  icon: "FolderIcon",
+  icon: "ApertureIcon",
   i18n: "SCAN TICKETS",
 },
 {
-              url: '/ui-elements/table',
-              name: "BOOKING",
-              tag: "new",
-              tagColor: "primary",
-              icon: "FolderIcon",
-              i18n: "BOOKING",
-            },
-              {
-                url: '/extensions/i18n',
-                name: "SETTINGS",
-                tagColor: "primary",
-                icon: "FolderIcon",
-                i18n: "SETTINGS",
-              },
-              {
         url: null,
         name: "ADMINISTRATOR ACCOUNT",
         icon: "UsersIcon",
@@ -124,7 +111,7 @@ export default [
       {
         url: null,
         name: "FINANCE ADMIN",
-        icon: "HomeIcon",
+        icon: "ActivityIcon",
         i18n: "FINANCE ADMIN",
         submenu: [
           // {
@@ -135,7 +122,7 @@ export default [
           //   ]
           // },
           {
-            url: "/dashboard/ecommerce",
+            url: "/ui-elements/card/statistics",
             name: "Dashboard",
             icon: "HomeIcon",
             slug: "import",
@@ -150,6 +137,37 @@ export default [
           }
         ]
       },
+      {
+        url: null,
+        name: "SETTINGS",
+        icon: "SettingsIcon",
+        i18n: "SETTINGS",
+        submenu: [
+          {
+            url: '/extensions/i18n',
+            name: 'Language Settings',
+            slug: 'pages-lock-screen',
+            i18n: 'Language Settings',
+            target: '_blank'
+          },
+          {
+            url: '/pages/login',
+            name: 'Login',
+            slug: 'pages-login',
+            i18n: 'Login',
+            target: '_blank'
+          },
+          {
+            url: 'https://tripcarte.asia/privacy-policy/',
+            name: "Register",
+            icon: "LifeBuoyIcon",
+            slug: "external",
+            i18n: "Register",
+            target: "_blank"
+          },
+          ]
+        },
+
     ]
       },
 ]

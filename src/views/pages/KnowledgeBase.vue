@@ -3,8 +3,8 @@
     Description: Knowledge Base Page
     ----------------------------------------------------------------------------------------
     Item Name: Tripcarte.Asia Dashboard Management Portal
-      Author: Pixinvent
-    Author URL: http://www.themeforest.net/user/pixinvent
+    Author: TripcarteDev
+    Demo Staging URL: https://tdmp-merchants.gispatial.vercel.app/
 ========================================================================================== -->
 
 
@@ -41,10 +41,10 @@ export default{
             kb: [
                 {
                   id          : 1,
-                  title       : 'Tripcarte.Asia Sales Automation',
+                  title       : 'Login',
                   description : 'Any text here.',
                   graphic     : require("@/assets/images/pages/graphic-1.png"),
-                  url         : '/pages/knowledge-base/category'
+                  url         : '/pages/login'
                 },
                 {
                   id          : 2,

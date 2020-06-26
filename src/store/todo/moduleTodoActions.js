@@ -2,9 +2,9 @@
   File Name: moduleTodoActions.js
   Description: Todo Module Actions
   ----------------------------------------------------------------------------------------
-  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
+  Item Name: Tripcarte.Asia Dashboard Management Portal
+    Author: Tripcarte.Asia
+  Staging URL: http://tripcarte.gispatial.tech/api
 ==========================================================================================*/
 
 import axios from "@/axios.js"
@@ -22,7 +22,7 @@ export default {
           .catch((error) => { reject(error) })
       })
     },
-    
+
     setTodoSearchQuery({ commit }, query){
         commit('SET_TODO_SEARCH_QUERY', query)
     },
@@ -36,7 +36,7 @@ export default {
           .catch((error) => { reject(error) })
       })
     },
-    
+
     fetchTags({ commit }) {
       return new Promise((resolve, reject) => {
         axios.get("/api/apps/todo/tags")
@@ -47,7 +47,7 @@ export default {
           .catch((error) => { reject(error) })
       })
     },
-    
+
     addTask({ commit }, task) {
       return new Promise((resolve, reject) => {
         axios.post("/api/apps/todo/tasks/", {task: task})
@@ -69,5 +69,5 @@ export default {
           .catch((error) => { reject(error) })
       })
     }
-    
+
 }

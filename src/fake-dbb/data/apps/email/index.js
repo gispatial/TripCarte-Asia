@@ -5,15 +5,15 @@ let data = {
   emails: [
     {
       id: 1,
-      sender: 'info@tripcarte.asia',
-      sender_name: 'Notifications: Tripcarte.Asia',
+      sender: 'sitiraudhah_uwl@edenzil.com',
+      sender_name: 'Notifications: UnderWater World Admin',
       to: ['noreply@tripcarte.asia'],
       // require('@/assets/images/portrait/small/avatar-s-1.jpg')
       img: require('@/assets/images/portrait/small/logo.png'),
       subject:  'Redemption Update',
       cc: [],
       bcc: [],
-      message: '<p>Dear all merchants & partners,</p><p><br></p><p>Biscuit lemon drops marshmallow. Cotton candy marshmallow bear claw. Dragée tiramisu cookie cotton candy. Carrot cake sweet roll I love macaroon wafer jelly soufflé I love dragée. Jujubes jelly I love carrot cake topping I love. Sweet candy I love chupa chups dragée. Tart I love gummies. Chocolate bar carrot cake candy wafer candy canes oat cake I love. Sesame snaps icing pudding sweet roll marshmallow. Cupcake brownie sweet roll chocolate bar I love gummies. Biscuit biscuit macaroon sesame snaps macaroon icing I love soufflé caramels. Apple pie candy jelly. I love icing gummi bears jelly-o pie muffin apple pie.</p><p><br></p><p>Marshmallow halvah brownie cake marzipan ice cream marshmallow. I love lollipop toffee croissant liquorice wafer muffin. Lollipop jelly beans caramels lollipop tootsie roll pudding pie macaroon tootsie roll. Oat cake jujubes gummies cake cake powder cupcake soufflé muffin. Chocolate caramels muffin tart. Jelly beans caramels dessert cotton candy liquorice chocolate cake. Chupa chups muffin bear claw I love. Biscuit jujubes soufflé tart caramels pie sugar plum. Croissant jelly beans cake. Ice cream chocolate liquorice dessert cookie chocolate cake. Powder tart sweet roll macaroon croissant. Sweet tootsie roll macaroon gummi bears macaroon. Gingerbread cake tart.</p><p><br></p><p>Regrads,</p><p>Kristeen Sicilia</p>',
+      message: '<p>Dear all partners,</p><p><br></p><p>Salam all</p><p><br></p><p>Regrads,</p><p>Kristeen Sicilia</p>',
       attachments: ['log.txt', 'sheet.xls'],
       isStarred: false,
       labels: ['private'],

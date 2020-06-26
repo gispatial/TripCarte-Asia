@@ -3,7 +3,7 @@
   Description: Dashboard Analytics
   ----------------------------------------------------------------------------------------
 	Item Name: TDMP - NETQUEST SOLUTIONS SB
-	Author: TripcarteDev
+	Author: Tripcarte.Dev@gmail.com
 	Author URL: http://tripcarte.gispatial.now.sh/
 ========================================================================================== -->
 
@@ -11,43 +11,34 @@
   <div id="dashboard-analytics">
     <div class="vx-row">
     <!-- CARD 9: DISPATCHED ORDERS -->
-    <div class="vx-col w-full">
-      <vx-card title="WELCOME TO TRIPCARTE.ASIA DASHBOARD">
-        <div slot="no-body" class="mt-4">
-        </div>
-
-      </vx-card>
-    </div>
-
-      <!-- CARD 1: CONGRATS -->
 
 
       <!-- CARD 2: SUBSCRIBERS GAINED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
       <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="/apps/todo/all">View Details</vs-button>
-        <statistics-card-line icon="UsersIcon" statistic="12k" statisticTitle="Total Reviews Collected" :chartData="subscribersGained.series" type='area'></statistics-card-line>
+        <statistics-card-line icon="UsersIcon" statistic="3" statisticTitle="Total Reviews Collected" :chartData="subscribersGained.series" type='area'></statistics-card-line>
       </div>
 
-      <!-- CARD 3: ORDER RECIEVED -->
+      <!-- CARD 3: ORDER RECEIVED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
       <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="/ui-elements/ag-grid-table">View Details</vs-button>
-        <statistics-card-line icon="ShoppingBagIcon" statistic="350 tickets.+ 15% " statisticTitle="Total Redemption this Week" :chartData="ordersRecevied.series" color='warning' type='area'></statistics-card-line>
+        <statistics-card-line icon="ShoppingBagIcon" statistic="6 tickets.+ 15% " statisticTitle="Total Redemption this Week" :chartData="ordersRecevied.series" color='warning' type='area'></statistics-card-line>
       </div>
 
       <!-- CARD 2: SUBSCRIBERS GAINED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
       <div>
       <vx-card>
-      <statistics-card-line icon="UsersIcon" statistic="14k" statisticTitle="Total Redemption this Year" :chartData="subscribersGained.series" type='area'></statistics-card-line>
+      <statistics-card-line icon="AwardIcon" statistic="RM 534" statisticTitle="Total Redemption this Year" :chartData="subscribersGained.series" type='area'></statistics-card-line>
       </vx-card>
       </div>
       </div>
 
-      <!-- CARD 3: ORDER RECIEVED -->
+      <!-- CARD 3: ORDER RECEIVED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
       <div>
       <vx-card>
-      <statistics-card-line icon="UsersIcon" statistic="14k" statisticTitle="Total Redemption this Year" :chartData="subscribersGained.series" type='area'></statistics-card-line>
+      <statistics-card-line icon="DollarSignIcon" statistic="RM 210" statisticTitle="Total Pending Payout" :chartData="subscribersGained.series" type='area'></statistics-card-line>
       </vx-card>
       </div>
       </div>
@@ -56,7 +47,16 @@
     <div class="vx-row">
 
     </div>
-    <div>-----Tripcarte.Asia Merchants Dashboard Prototype Development Ver-0.0.1</div>
+
+    <div class="vx-col w-full">
+    <vx-card slot="no-body" class="text-center bg-primary-gradient greet-user">
+                <img src="@/assets/images/elements/decore-left.png" class="decore-left" alt="Decore Left" width="200" >
+                <img src="@/assets/images/elements/decore-right.png" class="decore-right" alt="Decore Right" width="175">
+      <feather-icon icon="AwardIcon" class="p-6 mb-8 bg-primary inline-flex rounded-full text-white shadow" svgClasses="h-8 w-8"></feather-icon>
+      <h1 class="mb-6 text-white">Thank you for logged-in {{ checkpointReward.userName }}, and welcome!</h1>
+      <p class="xl:w-3/4 lg:w-4/5 md:w-2/3 w-4/5 mx-auto text-white">You have done <strong>{{ checkpointReward.progress }}</strong> more sales today. Check your new badge in your profile.</p>
+    </vx-card>
+    </div>
 
   </div>
 </template>

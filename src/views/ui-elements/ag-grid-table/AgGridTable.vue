@@ -2,9 +2,9 @@
     File Name: AgGridTable.vue
     Description: Ag Grid table
     ----------------------------------------------------------------------------------------
-    Item Name: Tripcarte.Asia Dashboard Management Portal
-    Author: Pixinvent
-    Author URL: http://www.themeforest.net/user/pixinvent
+  	Item Name: TDMP - NETQUEST SOLUTIONS SB
+  	Author: TripcarteDev
+  	Author URL: http://tripcarte.gispatial.now.sh/
 ========================================================================================== -->
 
 
@@ -97,13 +97,13 @@ export default {
       },
       columnDefs: [
         {
-          headerName: 'ID',
+          headerName: 'Order ID',
           field: 'id',
           filter: true,
           width: 175,
         },
         {
-          headerName: 'Status',
+          headerName: 'Item',
           field: 'commission_status',
           width: 175,
           filter: true,
@@ -124,19 +124,19 @@ export default {
           width: 175,
         },
         {
-          headerName: 'Qty Redeemed',
+          headerName: 'Redeemed Qty',
           field: 'redeem_qty',
           filter: true,
           width: 175,
         },
         {
-          headerName: 'Date Redeemed',
+          headerName: 'Redeemed Date',
           field: 'redeem_date_gmt',
           filter: true,
           width: 220,
         },
         {
-          headerName: 'Status',
+          headerName: 'Payment Status',
           field: 'commission_status',
           filter: true,
           width: 175,
