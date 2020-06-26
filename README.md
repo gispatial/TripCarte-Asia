@@ -21,7 +21,7 @@ Compiles and hot-reloads for development:
 ## Prerequisites
 
 You will need to have Node.js or Yarn installed in your machine. 
-[![NodeJs](https://nodejs.org/en)]
+[[NodeJs](https://nodejs.org/en)]
 [url]https://nodejs.org/en/[/url]
 
 ## Steps
