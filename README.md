@@ -55,6 +55,9 @@ npm run serve or yarn serve
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>.
 
+## Third-Party Plugins
+Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.
+
 
 # About Tripcarte.Asia Dashboard Portal Project
 
