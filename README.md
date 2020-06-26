@@ -50,12 +50,6 @@ npm run serve or yarn serve
 - Local:   http://localhost:8080/ 
 - Network: http://192.168.0.114:8080/
 ```
-## License
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>.
 
 ## Third-Party Plugins
 Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.
@@ -71,3 +65,10 @@ Docs: Documentation
 # About Tripcarte.Asia Dashboard Portal Project
 
 At Netquest Solutions Sdn Bhd, our engineers constantly use latest framework, technologies and programming language. Keeping up to date with latest framework not only ensures rapid development time, but updated framework technologies are more protected from malwares, security threats and operating system incompatibility. For more info, please visit: https://netquestsolutions.com/
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>.
