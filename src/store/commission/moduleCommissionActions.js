@@ -14,7 +14,7 @@ export default {
 
   getCommissions({commit}) {
     return new Promise((resolve, reject) => {
-      axios.get("https://demo.travelasia.com.my/wp-json/tripcarte_api/v1/commissions",  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } } )
+      axios.get("https://partners.tripcarte.asia/wp-json/tripcarte_api/v1/commissions",  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } } )
         .then(res => {
           commit('SET_COMMISSIONS', res.data)
           resolve(res)

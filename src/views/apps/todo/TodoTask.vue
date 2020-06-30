@@ -81,10 +81,10 @@ export default{
             required: true,
         }
     },*/
-    
+
     data() {
         return {
-          //review: post, 
+          //review: post,
           taskLocal: this.$store.getters["todo/getTask"](this.taskId)
         }
     },
@@ -148,12 +148,12 @@ export default{
     /*
     created: function() {
     axios
-      .get("https://demo.travelasia.com.my/wp-json/tripcarte_api/v1/reviews",  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } } )
+      .get("https://partners.tripcarte.asia/wp-json/tripcarte_api/v1/reviews",  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } } )
       .then(res => {
         this.post = res.data;
       })
   }
   */
-  
+
 }
 </script>

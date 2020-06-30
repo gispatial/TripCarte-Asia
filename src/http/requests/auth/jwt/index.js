@@ -46,7 +46,7 @@ export default {
     })
   },
   login(uname, pwd) {
-    return axios.post("https://demo.travelasia.com.my/wp-json/jwt-auth/v1/token", {username: uname, password: pwd})
+    return axios.post("https://partners.tripcarte.asia/wp-json/jwt-auth/v1/token", {username: uname, password: pwd})
   },
   registerUser(name, email, pwd) {
     return axios.post("/api/auth/register", {displayName: name, email: email, password: pwd})
