@@ -15,50 +15,19 @@
         <div class="vx-row">
             <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
             <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="/apps/todo/all">View Details</vs-button>
-                <statistics-card-line
-                  class="mb-base"
-                  v-if="subscribersGained.analyticsData"
-                  icon="UsersIcon"
-                  :statistic="subscribersGained.analyticsData.subscribers | k_formatter"
-                  statisticTitle="Total Reviews Collected"
-                  :chartData="subscribersGained.series"
-                  type='area' />
+                <statistics-card-line icon="FeatherIcon" statistic="1.4k" statisticTitle="Total Reviews Collected" :chartData="subscribersGained.series" type='area'></statistics-card-line>
             </div>
 
             <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
             <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="/ui-elements/ag-grid-table">View Details</vs-button>
-                <statistics-card-line
-                  class="mb-base"
-                  v-if="revenueGenerated.analyticsData"
-                  icon="DollarSignIcon"
-                  :statistic="revenueGenerated.analyticsData.revenue | k_formatter"
-                  statisticTitle="Total Redemption This Week"
-                  :chartData="revenueGenerated.series"
-                  color='success'
-                  type='area' />
+                <statistics-card-line icon="LayersIcon" statistic="350 tickets .+1" statisticTitle="Total Redemption this week" :chartData="subscribersGained.series" type='area'></statistics-card-line>
             </div>
 
             <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
-                <statistics-card-line
-                  class="mb-base"
-                  v-if="quarterlySales.analyticsData"
-                  icon="ShoppingCartIcon"
-                  :statistic="quarterlySales.analyticsData.sales"
-                  statisticTitle="Total Redemption This Year"
-                  :chartData="quarterlySales.series"
-                  color='danger'
-                  type='area' />
+                <statistics-card-line icon="ShoppingBagIcon" statistic="14k" statisticTitle="Total Redemption this year" :chartData="subscribersGained.series" type='area'></statistics-card-line>
             </div>
             <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
-                <statistics-card-line
-                  class="mb-base"
-                  v-if="ordersRecevied.analyticsData"
-                  icon="ShoppingBagIcon"
-                  :statistic="ordersRecevied.analyticsData.orders | k_formatter"
-                  statisticTitle="Total Pending Payout"
-                  :chartData="ordersRecevied.series"
-                  color='warning'
-                  type='area' />
+                <statistics-card-line icon="DollarSignIcon" statistic="RM 2300" statisticTitle="Total Pending Payout" :chartData="subscribersGained.series" type='area'></statistics-card-line>
             </div>
         </div>
 

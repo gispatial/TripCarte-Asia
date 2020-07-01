@@ -31,10 +31,10 @@ export default [
   {
     header: "MERCHANT PANEL",
     icon: "LayersIcon",
-    i18n: "MERCHANT PANEL",
+    i18n: "ADMINISTRATION PANEL",
     items: [
     {
-      url: null,
+      url: '/ui-elements/card/statistics',
       name: "DASHBOARD",
       slug: "colors",
       icon: "MonitorIcon",
@@ -45,7 +45,7 @@ export default [
     {
       url: '/ui-elements/ag-grid-table',
       name: "PAYOUTS",
-      tag: "3",
+      tag: "New!",
       tagColor: "primary",
       icon: "DollarSignIcon",
       i18n: "PAYOUTS",
@@ -53,23 +53,15 @@ export default [
     {
       url: '/ui-elements/data-list/list-view',
       name: "REDEMPTIONS",
-      tag: "5",
+      tag: "New!",
       tagColor: "primary",
       icon: "AwardIcon",
       i18n: "REDEMPTIONS",
     },
-      {
-        url: '/apps/eCommerce/shop',
-        name: "PRODUCTS",
-        tag: "368",
-        tagColor: "primary",
-        icon: "ShoppingBagIcon",
-        i18n: "PRODUCTS",
-      },
         {
           url: '/apps/todo/all',
           name: "REVIEWS",
-          tag: "New",
+          tag: "New!",
           tagColor: "primary",
           icon: "FeatherIcon",
           i18n: "REVIEWS",
@@ -80,34 +72,6 @@ export default [
   icon: "ApertureIcon",
   i18n: "SCAN TICKETS",
 },
-{
-        url: null,
-        name: "ADMINISTRATOR ACCOUNT",
-        icon: "UsersIcon",
-        i18n: "ADMINISTRATOR ACCOUNT",
-        submenu: [
-          {
-            url: '/apps/user/user-list',
-            name: "User Management",
-            icon: "UserIcon",
-            slug: "app-user-list",
-            i18n: "User Management",
-          },
-          {
-            url: '/apps/user/user-view/268',
-            name: "User Profile Update",
-            icon: "SettingIcon",
-            slug: "app-user-view",
-            i18n: "User Profile Update",
-          },
-          {
-            url: '/apps/user/user-edit/268',
-            name: "Update all Users",
-            slug: "app-user-edit",
-            i18n: "Update all Users",
-          },
-        ]
-      },
       {
         url: null,
         name: "FINANCE ADMIN",

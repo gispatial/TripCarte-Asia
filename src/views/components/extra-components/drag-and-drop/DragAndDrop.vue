@@ -11,7 +11,7 @@
 
     <div id="extra-component-drag-and-drop-demo">
 
-        <p class="mb-4">Thank you for using Tripcarte</p>
+        <p class="mb-4">Please scan your ticket</p>
 
         <drag-and-drop-multiple-lists></drag-and-drop-multiple-lists>
     </div>

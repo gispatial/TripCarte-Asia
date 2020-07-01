@@ -12,33 +12,39 @@
     <div class="vx-row">
     <!-- CARD 9: DISPATCHED ORDERS -->
     <div class="vx-col w-full">
-      <vx-card title="WELCOME TO TRIPCARTE.ASIA DASHBOARD">
         <div slot="no-body" class="mt-4">
         </div>
 
       </vx-card>
     </div>
 
+    <div class="vx-row">
+    <div class="vx-col w-full">
+    <vx-card slot="no-body" class="text-center bg-primary-gradient greet-user">
+                <img src="@/assets/images/elements/decore-left.png" class="decore-left" alt="Decore Left" width="200" >
+                <img src="@/assets/images/elements/decore-right.png" class="decore-right" alt="Decore Right" width="175">
+      <feather-icon icon="AwardIcon" class="p-6 mb-8 bg-primary inline-flex rounded-full text-white shadow" svgClasses="h-8 w-8"></feather-icon>
+      <h1 class="mb-6 text-white">WELCOME TO TRIPCARTE DASHBOARD MANAGEMENT PORTAL</h1>
+      <p class="xl:w-3/4 lg:w-4/5 md:w-2/3 w-4/5 mx-auto text-white">This is default home.</p>
+    </vx-card>
+    </div>
+
+
       <!-- CARD 1: CONGRATS -->
 
 
       <!-- CARD 2: SUBSCRIBERS GAINED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
-      <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="/pages/login">Login To View</vs-button>
-        <statistics-card-line icon="UsersIcon" statisticTitle="Total Reviews Collected - not logged-in" type='area'></statistics-card-line>
       </div>
 
       <!-- CARD 3: ORDER RECIEVED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
-      <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="https://tripcarte.asia/registration/" target="_blank">Need an Account?</vs-button>
-        <statistics-card-line icon="ShoppingBagIcon" statisticTitle="Total Redemption this Week - not logged-in" color='warning' type='area'></statistics-card-line>
       </div>
 
       <!-- CARD 2: SUBSCRIBERS GAINED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
       <div>
       <vx-card>
-      <statistics-card-line icon="UsersIcon" statisticTitle="Total Redemption this Year - not logged-in" type='area'></statistics-card-line>
       </vx-card>
       </div>
       </div>
@@ -47,14 +53,10 @@
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
       <div>
       <vx-card>
-      <statistics-card-line icon="UsersIcon" statisticTitle="Total Pending Payout - not logged-in" type='area'></statistics-card-line>
       </vx-card>
       </div>
       </div>
     </div>
-
-    <div class="vx-row">
-
     </div>
     <div>-----Tripcarte.Asia Merchants Dashboard Prototype Development Ver-0.0.1</div>
 

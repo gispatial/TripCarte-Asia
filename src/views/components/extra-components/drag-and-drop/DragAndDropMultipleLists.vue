@@ -9,86 +9,60 @@
 
 
 <template>
-    <vx-card title="BARCODE" code-toggler>
+  <div>
+    <p class="error">{{ error }}</p>
 
-      <vs-button class="ml-auto mt-2">Start Scanning</vs-button>
-        <p></p>
-        <p>Or</p>
+    <p class="decode-result">Last result: <b>{{ result }}</b></p>
 
-
-            </div>
-
-        </div>
-
-        <!-- List 2 -->
-        <div class="vx-row">
-            <div class="vx-col w-full md:w-1/2">
-                <prism language="js" class="rounded-lg">
-Enter Barcode:
-                </prism>
-            </div>
-        </div>
-
-
-  // ...
-))
-
-        <template slot="codeContainer">
-        </template>
-    </vx-card>
+    <qrcode-stream @decode="onDecode" @init="onInit" />
+  </div>
 </template>
+
 <script>
-import draggable from 'vuedraggable'
-import Prism from 'vue-prism-component'
-import { QrcodeStream, QrcodeDropZone, QrcodeCapture } from 'vue-qrcode-reader'
+import { QrcodeStream } from 'vue-qrcode-reader'
 
 export default {
-    data() {
-        return {
-            list1: [
-                {
-                    name: "Paz Joya",
-                    email: "girliness@spotlike.co.uk",
-                },
-                {
-                    name: "Sunshine Cose",
-                    email: "executrixship@equisized.edu",
-                },
-                {
-                    name: "Alba Dobbin",
-                    email: "bidding@demibob.or",
-                },
-                {
-                    name: "Marlin Hinchee",
-                    email: "preholding@scuffly.co.uk",
-                }
-            ],
-            list2: [
-                {
-                    name: "Leia Atienza",
-                    email: "unmeasurableness@interlamellar.co.uk"
-                },
-                {
-                    name: "Lashawna Vaudrainm",
-                    email: "soaking@khubber.com"
-                },
-                {
-                    name: "Liliana Henscheid",
-                    email: "lecideine@turndown.org"
-                },
-                {
-                    name: "Keven Kolter",
-                    email: "nontenure@anglicanum.co.uk"
-                }
-            ]
-        }
-    },
-    components: {
-        draggable,
-        Prism,
-        QrcodeStream,
-        QrcodeDropZone,
-        QrcodeCapture
+
+  components: { QrcodeStream },
+
+  data () {
+    return {
+      result: '',
+      error: ''
     }
+  },
+
+  methods: {
+    onDecode (result) {
+      this.result = result
+    },
+
+    async onInit (promise) {
+      try {
+        await promise
+      } catch (error) {
+        if (error.name === 'NotAllowedError') {
+          this.error = "ERROR: you need to grant camera access permisson"
+        } else if (error.name === 'NotFoundError') {
+          this.error = "ERROR: no camera on this device"
+        } else if (error.name === 'NotSupportedError') {
+          this.error = "ERROR: secure context required (HTTPS, localhost)"
+        } else if (error.name === 'NotReadableError') {
+          this.error = "ERROR: is the camera already in use?"
+        } else if (error.name === 'OverconstrainedError') {
+          this.error = "ERROR: installed cameras are not suitable"
+        } else if (error.name === 'StreamApiNotSupportedError') {
+          this.error = "ERROR: Stream API is not supported in this browser"
+        }
+      }
+    }
+  }
 }
 </script>
+
+<style scoped>
+.error {
+  font-weight: bold;
+  color: red;
+}
+</style>
