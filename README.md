@@ -186,13 +186,13 @@ At Netquest Solutions Sdn Bhd, our engineers constantly use latest framework, te
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>.
 
-<p class="p1"><span class="s1">## Third-Party Plugins</span></p>
-<p class="p1"><span class="s2">Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.</span></p>
-<p class="p4"><span class="s2">### agGrid Table</span></p>
-<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;THE best javascript grid in the world</span></p>
+## Third-Party Plugins
+Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.</span></p>
+### agGrid Table
+THE best javascript grid in the world
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/ui-elements/ag-grid-table"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.ag-grid.com/vue-getting-started/"><span class="s3">Documentation</span></a></span></p>
-<p class="p4"><span class="s5">### </span><span class="s2">Algolia</span></p>
+### Algolia
 <p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Algolia&rsquo;s full suite APIs enable teams to develop unique search and discovery experiences for their customers across all platforms and devices.</span></p>
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/apps/eCommerce/shop"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.algolia.com/doc"><span class="s3">Documentation</span></a></span></p>
