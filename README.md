@@ -185,3 +185,145 @@ At Netquest Solutions Sdn Bhd, our engineers constantly use latest framework, te
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>.
+
+<p class="p1"><span class="s1">## Third-Party Plugins</span></p>
+<p class="p1"><span class="s2">Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.</span></p>
+<p class="p4"><span class="s2">### agGrid Table</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;THE best javascript grid in the world</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/ui-elements/ag-grid-table"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.ag-grid.com/vue-getting-started/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Algolia</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Algolia&rsquo;s full suite APIs enable teams to develop unique search and discovery experiences for their customers across all platforms and devices.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/apps/eCommerce/shop"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.algolia.com/doc"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Axios</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Promise based HTTP client for the browser and node.js</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/ui-elements/data-list/thumb-view"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/axios/axios"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue InstantSearch</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;InstantSearch is a family of open-source, production-ready UI libraries that eases the usage and installation of the Algolia search engine.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/apps/eCommerce/shop"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/vue/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Auth0</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Auth0 provides universal authentication &amp; authorization platform for web, mobile and legacy applications.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/pages/login"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://auth0.com/docs/quickstart/spa/vuejs"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Firebase</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/pages/login"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://firebase.google.com/docs/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Apex Charts</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;ApexCharts.js - An open-source HTML5 JavaScript charting library that helps developers to create responsive &amp; interactive JS charts for web pages.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/charts-and-maps/charts/apex-charts"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://apexcharts.com/docs/vue-charts/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">ChartsJS</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Easy and beautiful charts with Chart.js and Vue.js</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/charts-and-maps/charts/chartjs"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://vue-chartjs.org/guide/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Clipboard</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;A simple vuejs 2 binding for clipboard.js</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/clipboard"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/Inndy/vue-clipboard2"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s2">### Context Menu</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;</span><span class="s6">vue-content</span><span class="s2">&nbsp;provides a simple yet flexible context menu for Vue.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/context-menu"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://vue-context.randallwilk.com/docs"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">ECharts</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;ECharts component for Vue.js.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/charts-and-maps/charts/echarts"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/ecomfe/vue-echarts"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">VeeValidate</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Template Based Validation Framework for Vue.js</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/forms/form-validation"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://baianat.github.io/vee-validate/guide/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Datepicker</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;A simple Vue.js datepicker component. Supports disabling of dates, inline mode, translations</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/datepicker"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/charliekassel/vuejs-datepicker"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Flatpickr Component</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Vue.js component for Flatpickr datetime picker</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/datetime-picker"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/ankurk91/vue-flatpickr-component"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s2">### Vue2 Hammer</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Hammer.js wrapper for Vue 2.x to support some touching operation in the mobile.[Swipe In/Out sidemenu]</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/bsdfzzzy/vue2-hammer"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Form Wizard</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Vue-form-wizard is a vue based component with no external depenendcies which simplifies tab wizard management.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/forms/form-wizard"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://binarcode.github.io/vue-form-wizard/#/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Full Calendar</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;vue calendar fullCalendar. no jquery required. Schedule events management.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<em>Removed</em></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/Wanderxx/vue-fullcalendar"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Simple Calendar</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Simple Vue component to show a month-grid calendar with events</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/apps/calendar/vue-simple-calendar"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/richardtallent/vue-simple-calendar"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s2">### Vue Select</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;A Vue.js select component that provides similar functionality to Select2/Chosen without the overhead of jQuery.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/select"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://sagalbot.github.io/vue-select/docs/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Draggable</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Vue drag-and-drop component based on Sortable.js</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/drag-and-drop"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/SortableJS/Vue.Draggable"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Video Player</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;videojs component for vuejs</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/ui-elements/card/basic"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://surmon-china.github.io/vue-video-player/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Feather Icons</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Simply beautiful open source icons as Vue functional components.</span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/egoist/vue-feather-icons"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Google Maps</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong></span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/charts-and-maps/maps/google-map"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/xkjyeah/vue-google-maps"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue I18n</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Vue I18n is internationalization plugin for Vue.js</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/i18n"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://kazupon.github.io/vue-i18n/introduction.html"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Perfect Scollbar</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;scrollbar for vue, depend on perfect-scrollbar</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;Main Sidebar</span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/Degfy/vue-perfect-scrollbar"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Prism Component</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;highlight code using prism.js and vue component</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;Card Code Toggle</span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/egoist/vue-prism-component"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Quill Editor</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Quill editor component for Vue, support SPA and SSR.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/quill-editor"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/surmon-china/vue-quill-editor"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s2">### Vue Simple Suggest</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Feature-rich autocomplete component for Vue.js</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/autocomplete"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/KazanExpress/vue-simple-suggest"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Star Ratings</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;A simple, highly customisable star rating component for Vue 2.x</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/star-ratings"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/craigh411/vue-star-rating"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Tour</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Vue Tour is a lightweight, simple and customizable guided tour plugin for use with Vue.js. It provides a quick and easy way to guide your users through your application.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/pulsardev/vue-tour"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Tree Halower</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;tree and multi-select component based on Vue.js 2.0</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/tree"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/halower/vue-tree"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue BackToTop</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Quill editor component for Vue, support SPA and SSR.</span></p>
+<p class="p5"><span class="s4"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/"><span class="s3">Visit - Scroll down in page</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/caiofsouza/vue-backtotop"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Awesome Swiper - Image Slider</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Quill editor component for Vue, support SPA and SSR.</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/carousel"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://surmon-china.github.io/vue-awesome-swiper/"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue Clipboard</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;A simple vue2 binding to clipboard.js</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/clipboard"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/Inndy/vue-clipboard2"><span class="s3">Documentation</span></a></span></p>
+<p class="p4"><span class="s5">### </span><span class="s2">Vue ACL</span></p>
+<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Help you to control the permission of access in your app for yours components and routes</span></p>
+<p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/access-control-editor"><span class="s3">Visit</span></a></span></p>
+<p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/leonardovilarinho/vue-acl"><span class="s3">Documentation</span></a></span></p>
