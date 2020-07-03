@@ -187,17 +187,17 @@ At Netquest Solutions Sdn Bhd, our engineers constantly use latest framework, te
 - Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>.
 
 ## Third-Party Plugins
-Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.</span></p>
+Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.
 ### agGrid Table
-THE best javascript grid in the world
+THE best javascript grid in the world.
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/ui-elements/ag-grid-table"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.ag-grid.com/vue-getting-started/"><span class="s3">Documentation</span></a></span></p>
 ### Algolia
-<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Algolia&rsquo;s full suite APIs enable teams to develop unique search and discovery experiences for their customers across all platforms and devices.</span></p>
+Description: Algolia's full suite APIs enable teams to develop unique search and discovery experiences for their customers across all platforms and devices.</p>
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/apps/eCommerce/shop"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.algolia.com/doc"><span class="s3">Documentation</span></a></span></p>
 ### Axios
-<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Promise based HTTP client for the browser and node.js</span></p>
+Description: Promise based HTTP client for the browser and node.js
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/ui-elements/data-list/thumb-view"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/axios/axios"><span class="s3">Documentation</span></a></span></p>
 ### Vue InstantSearch
@@ -319,7 +319,7 @@ THE best javascript grid in the world
 <p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;Quill editor component for Vue, support SPA and SSR.</span></p>
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/carousel"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://surmon-china.github.io/vue-awesome-swiper/"><span class="s3">Documentation</span></a></span></p>
-### >Vue Clipboard
+### Vue Clipboard
 <p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;A simple vue2 binding to clipboard.js</span></p>
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/extensions/clipboard"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/Inndy/vue-clipboard2"><span class="s3">Documentation</span></a></span></p>
