@@ -170,13 +170,6 @@ Vuexy Admin comes with useful third party plug-ins to help you building your app
 ### agGrid Table
 Description: THE best javascript grid in the world
 
-## License
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>.
-
 ## Third-Party Plugins
 Tripcarte Dashboard Portal Admin comes with useful third party plug-ins to help you building your app quickly.
 ### Technical Specification (Credits 🙏)<p></p>
@@ -221,6 +214,12 @@ Tripcarte Dashboard Portal Admin comes with useful third party plug-ins to help 
 <li><a href="https://github.com/leonardovilarinho/vue-acl" target="_blank" rel="noopener noreferrer">Vue ACL</a></li>
 </ul>
 
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>
 
 # About Tripcarte.Asia Dashboard Portal Project
 
