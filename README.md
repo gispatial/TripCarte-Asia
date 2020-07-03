@@ -193,7 +193,7 @@ THE best javascript grid in the world.
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/ui-elements/ag-grid-table"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.ag-grid.com/vue-getting-started/"><span class="s3">Documentation</span></a></span></p>
 ### Algolia
-Description: Algolia's full suite APIs enable teams to develop unique search and discovery experiences for their customers across all platforms and devices.</p>
+Description: Algolia's full suite APIs enable teams to develop unique search and discovery experiences for their customers across all platforms and devices.
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/apps/eCommerce/shop"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.algolia.com/doc"><span class="s3">Documentation</span></a></span></p>
 ### Axios
@@ -201,7 +201,7 @@ Description: Promise based HTTP client for the browser and node.js
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/ui-elements/data-list/thumb-view"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://github.com/axios/axios"><span class="s3">Documentation</span></a></span></p>
 ### Vue InstantSearch
-<p class="p2"><span class="s2"><strong>Description:</strong>&nbsp;InstantSearch is a family of open-source, production-ready UI libraries that eases the usage and installation of the Algolia search engine.</span></p>
+Description: InstantSearch is a family of open-source, production-ready UI libraries that eases the usage and installation of the Algolia search engine.
 <p class="p2"><span class="s2"><strong>Demo:</strong>&nbsp;<a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/apps/eCommerce/shop"><span class="s3">Visit</span></a></span></p>
 <p class="p5"><span class="s4"><strong>Docs:</strong>&nbsp;<a href="https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/vue/"><span class="s3">Documentation</span></a></span></p>
 ### Auth0
