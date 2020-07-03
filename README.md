@@ -167,17 +167,8 @@ npm run serve or yarn serve
 ## Third-Party Plugins
 Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.
 
-### #agGrid Table
+### agGrid Table
 Description: THE best javascript grid in the world
-
-Demo: Visit
-
-Docs: Documentation
-
-
-# About Tripcarte.Asia Dashboard Portal Project
-
-At Netquest Solutions Sdn Bhd, our engineers constantly use latest framework, technologies and programming language. Keeping up to date with latest framework not only ensures rapid development time, but updated framework technologies are more protected from malwares, security threats and operating system incompatibility. For more info, please visit: https://netquestsolutions.com/
 
 ## License
 
@@ -187,7 +178,7 @@ At Netquest Solutions Sdn Bhd, our engineers constantly use latest framework, te
 - Copyright 2020 © <a href="http://tripcarte.asia/" target="_blank">Tripcarte.Asia</a>.
 
 ## Third-Party Plugins
-Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.
+Tripcarte Dashboard Portal Admin comes with useful third party plug-ins to help you building your app quickly.
 ### Technical Specification (Credits 🙏)<p></p>
 <li>Powered by&nbsp;<a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue</a></li>
 <li><a href="https://cli.vuejs.org/" target="_blank" rel="noopener noreferrer">Vue CLI 3</a></li>
@@ -229,3 +220,8 @@ Vuexy Admin comes with useful third party plug-ins to help you building your app
 <li><a href="https://github.com/Inndy/vue-clipboard2" target="_blank" rel="noopener noreferrer">Vue Clipboard</a></li>
 <li><a href="https://github.com/leonardovilarinho/vue-acl" target="_blank" rel="noopener noreferrer">Vue ACL</a></li>
 </ul>
+
+
+# About Tripcarte.Asia Dashboard Portal Project
+
+At Netquest Solutions Sdn Bhd, our engineers constantly use latest framework, technologies and programming language. Keeping up to date with latest framework not only ensures rapid development time, but updated framework technologies are more protected from malwares, security threats and operating system incompatibility. For more info, please visit: https://netquestsolutions.com/
