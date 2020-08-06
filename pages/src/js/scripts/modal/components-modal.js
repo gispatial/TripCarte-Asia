@@ -3,10 +3,10 @@
     Description: Modals are streamlined, but flexible, dialog prompts with the minimum
 				required functionality and smart defaults.
     ----------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: Pixinvent
-    Author URL: hhttp://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+	  Item Name: Tripcarte.Asia Dashboard Management Portal
+	    Author: Tripcarte.Asia
+	  Staging URL: http://tripcarte.gispatial.tech/api
+	==========================================================================================*/
 (function(window, document, $) {
 	'use strict';
 

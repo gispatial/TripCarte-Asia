@@ -3,8 +3,8 @@
     Description: Reset Password Page
     ----------------------------------------------------------------------------------------
     Item Name: Tripcarte.Asia Dashboard Management Portal
-    Author: TripcarteDev
-    Demo Staging URL: https://tdmp-merchants.gispatial.vercel.app/
+    Author: Netquest
+    Author URL: http://demo.tripcarte.asia/
 ========================================================================================== -->
 
 

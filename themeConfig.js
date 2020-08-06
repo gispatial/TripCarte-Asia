@@ -7,10 +7,10 @@
 	Author URL: http://tripcarte.asia/
 ==========================================================================================*/
 
-// MAIN COLORS - VUESAX THEME COLORS
+// MAIN COLORS - TC_ASIA THEME COLORS
 let colors = {
 	primary : '#EA5455',
-	success : '#28C76F',
+	success : '#1D2430',
 	danger  : '#ED5567',
 	warning : '#FF9F43',
 	dark    : '#1E1E1E',

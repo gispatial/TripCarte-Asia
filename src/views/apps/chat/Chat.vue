@@ -1,13 +1,3 @@
-<!-- =========================================================================================
-    File Name: Chat.vue
-    Description: Chat Application - Stay connected
-    ----------------------------------------------------------------------------------------
-    Item Name: Tripcarte.Asia Dashboard Management Portal
-      Author: Pixinvent
-    Author URL: http://www.themeforest.net/user/pixinvent
-========================================================================================== -->
-
-
 <template>
     <div id="chat-app" class="border border-solid d-theme-border-grey-light rounded relative overflow-hidden">
         <vs-sidebar class="items-no-padding" parent="#chat-app" :click-not-close="clickNotClose" :hidden-background="clickNotClose" v-model="isChatSidebarActive" id="chat-list-sidebar">
@@ -70,7 +60,7 @@
             <template v-else>
                 <div class="flex flex-col items-center">
                     <feather-icon icon="MessageSquareIcon" class="mb-4 bg-white p-8 shadow-md rounded-full" svgClasses="w-16 h-16"></feather-icon>
-                    <h4 class=" py-2 px-4 bg-white shadow-md rounded-full cursor-pointer" @click.stop="toggleChatSidebar(true)">Start Conversation</h4>
+                    <h4 class=" py-2 px-4 bg-white shadow-md rounded-full cursor-pointer" @click.stop="toggleChatSidebar(true)">Chat with Our Support Now!</h4>
                 </div>
             </template>
         </div>

@@ -46,20 +46,20 @@ const router = new Router({
         // =============================================================================
                 {
                     path: '/',
-                    redirect: '/dashboard/ecommerce'
+                    redirect: '/dashboard/home'
                 },
                 {
-                    path: '/dashboard/ecommerce',
-                    name: 'dashboard-dcommerce',
-                    component: () => import('./views/DashboardECommerce.vue'),
+                    path: '/dashboard/home',
+                    name: 'dashboard-home',
+                    component: () => import('./views/DashboardHome.vue'),
                     meta: {
                         rule: 'admin',
                     }
                 },
                 {
-                    path: '/dashboard/ecommerce',
-                    name: 'dashboard-ecommerce',
-                    component: () => import('./views/DashboardECommerce.vue'),
+                    path: '/dashboard/home',
+                    name: 'dashboard-home',
+                    component: () => import('./views/DashboardHome.vue'),
                     meta: {
                         rule: 'admin'
                     }
@@ -241,7 +241,7 @@ const router = new Router({
                             { title: 'Redemptions'},
                             { title: 'Commissions', active: true },
                         ],
-                        pageTitle: 'Redemptions',
+                        pageTitle: 'REDEMPTIONS',
                         rule: 'admin'
                     },
                 },
@@ -386,13 +386,13 @@ const router = new Router({
                 {
                     path: '/ui-elements/ag-grid-table',
                     name: 'ag-grid-table',
-                    component: () => import('./views/ui-elements/ag-grid-table/AgGridTable.vue'),
+                    component: () => import('./views/ui-elements/commissions/AgGridTable.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
                             { title: 'Payout | Commission', active: true },
                         ],
-                        pageTitle: 'Payouts',
+                        pageTitle: 'PAYOUTS',
                         rule: 'admin'
                     },
                 },
@@ -505,10 +505,10 @@ const router = new Router({
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
-                            { title: 'Components' },
-                            { title: 'Dialogs', active: true },
+                            { title: 'Tickets' },
+                            { title: 'Counter', active: true },
                         ],
-                        pageTitle: 'Dialogs',
+                        pageTitle: 'TICKETS COUNTER',
                         rule: 'admin'
                     },
                 },
@@ -673,10 +673,10 @@ const router = new Router({
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
-                            { title: 'Components' },
-                            { title: 'Tabs', active: true },
+                            { title: 'Scan' },
+                            { title: 'Tickets', active: true },
                         ],
-                        pageTitle: 'Tabs',
+                        pageTitle: 'TICKETS COUNTER',
                         rule: 'admin'
                     },
                 },
@@ -1029,10 +1029,10 @@ const router = new Router({
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
-                            { title: 'Charts & Maps' },
-                            { title: 'echarts', active: true },
+                            { title: 'Tripcarte.Asia' },
+                            { title: 'homepage', active: true },
                         ],
-                        pageTitle: 'echarts',
+                        pageTitle: 'DASHBOARD',
                         rule: 'admin'
                     },
                 },

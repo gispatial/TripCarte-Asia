@@ -39,13 +39,11 @@ export default [
       slug: "colors",
       icon: "MonitorIcon",
       i18n: "DASHBOARD",
-      tagColor: "dark",
-      tag: "New"
+      tagColor: "dark"
     },
     {
       url: '/ui-elements/ag-grid-table',
       name: "PAYOUTS",
-      tag: "New!",
       tagColor: "primary",
       icon: "DollarSignIcon",
       i18n: "PAYOUTS",
@@ -53,7 +51,6 @@ export default [
     {
       url: '/ui-elements/data-list/list-view',
       name: "REDEMPTIONS",
-      tag: "New!",
       tagColor: "primary",
       icon: "AwardIcon",
       i18n: "REDEMPTIONS",
@@ -61,13 +58,12 @@ export default [
         {
           url: '/apps/todo/all',
           name: "REVIEWS",
-          tag: "New!",
           tagColor: "primary",
           icon: "FeatherIcon",
           i18n: "REVIEWS",
         },
         {
-  url: '/extensions/drag-and-drop',
+  url: '/components/tabs',
   name: "SCAN TICKETS",
   icon: "ApertureIcon",
   i18n: "SCAN TICKETS",
@@ -93,7 +89,7 @@ export default [
             i18n: "Dashboard"
           },
           {
-            url: "/ui-elements/ag-grid-table",
+            url: "/tc-ui/payouts",
             name: "PAYOUTS",
             icon: "HomeIcon",
             slug: "export",
@@ -122,12 +118,19 @@ export default [
             target: '_blank'
           },
           {
-            url: 'https://tripcarte.asia/privacy-policy/',
+            url: 'https://tripcarte.asia/registration/',
             name: "Register",
             icon: "LifeBuoyIcon",
             slug: "external",
             i18n: "Register",
             target: "_blank"
+          },
+          {
+            url: '/apps/chat',
+            name: 'Chat with Support',
+            slug: 'pages-login',
+            i18n: 'Chat with Support',
+            target: '_blank'
           },
           ]
         },

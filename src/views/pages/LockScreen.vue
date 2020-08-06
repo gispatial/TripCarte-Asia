@@ -17,18 +17,26 @@
                         <div class="vx-col hidden sm:hidden md:hidden lg:block lg:w-1/2 mx-auto self-center">
                             <img src="@/assets/images/pages/lock-screen.png" alt="login" class="mx-auto">
                         </div>
+
                         <div class="vx-col sm:w-full md:w-full lg:w-1/2 mx-auto self-center d-theme-dark-bg">
                             <div class="p-8">
                                 <div class="vx-card__title mb-8">
-                                    <h4 class="mb-4">Your Session is locked</h4>
+                                    <h4 class="mb-4">TC BARCODE SCANNER</h4>
                                 </div>
-                                <vs-input icon-no-border icon="icon icon-user" icon-pack="feather" label-placeholder="Username" v-model="value1" class="w-full mb-6"/>
-                                <vs-input icon-no-border icon="icon icon-lock" icon-pack="feather" type="password" label-placeholder="Password" v-model="value2" class="w-full mb-6" />
 
-                                <div class="flex justify-between flex-wrap">
-                                    <router-link to="/pages/login" class="mb-4">Are you not Parthiven?</router-link>
-                                    <vs-button class="ml-2">Unlock</vs-button>
+                                    <router-link to="/extensions/drag-and-drop" class="mb-4"><vs-button class="ml-2">SCAN NOW!</vs-button></router-link>
+
+                                <div>
+                                Or</div>
+                                <vs-input icon-no-border icon="icon icon-lock" icon-pack="feather" type="scan" label-placeholder="Enter barcode" v-model="value2" class="w-full mb-6" />
+
+                                <div align="center"><div class="flex justify-between flex-wrap">
+                                    <router-link to="/dashboard/ecommerce" class="mb-4">
+                                    <vs-button class="ml-2">Cancel</vs-button></router-link>
                                 </div>
+                                <barcode value="5d9e8f8499f1b" :options="{ lineColor: '#0275d8', text: 'Scan'}"><router-link to="/extensions/drag-and-drop" class="mb-4"><vs-button class="ml-2">Go!</vs-button></router-link></barcode>
+
+</div>
 
                             </div>
                         </div>
@@ -48,4 +56,6 @@ export default {
         }
     }
 }
+
+
 </script>

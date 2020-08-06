@@ -1,12 +1,3 @@
-<!-- =========================================================================================
-    File Name: UserProfile.vue
-    Description: user profile sidebar
-    ----------------------------------------------------------------------------------------
-    Item Name: Tripcarte.Asia Dashboard Management Portal
-      Author: Pixinvent
-    Author URL: http://www.themeforest.net/user/pixinvent
-========================================================================================== -->
-
 <template>
     <div id="parentx-demo-2">
 

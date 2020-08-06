@@ -27,6 +27,7 @@
 
       <!-- CARD 2: SUBSCRIBERS GAINED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
+
       <div>
       <vx-card>
       <statistics-card-line icon="AwardIcon" statistic="RM 534" statisticTitle="Total Redemption this Year" :chartData="subscribersGained.series" type='area'></statistics-card-line>

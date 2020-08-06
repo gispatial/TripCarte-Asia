@@ -2,10 +2,10 @@
     File Name: chart-echart.js
     Description: echarts examples
     ----------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: PIXINVENT
-    Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+    Item Name: Tripcarte.Asia Dashboard Management Portal
+      Author: Tripcarte.Asia
+    Staging URL: http://tripcarte.gispatial.tech/api
+  ==========================================================================================*/
 
 $(window).on("load", function(){
 

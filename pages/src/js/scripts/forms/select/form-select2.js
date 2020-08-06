@@ -3,10 +3,10 @@
     Description: Select2 is a jQuery-based replacement for select boxes.
     It supports searching, remote data sets, and pagination of results.
     ----------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: Pixinvent
-    Author URL: hhttp://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+	  Item Name: Tripcarte.Asia Dashboard Management Portal
+	    Author: Tripcarte.Asia
+	  Staging URL: http://tripcarte.gispatial.tech/api
+	==========================================================================================*/
 (function(window, document, $) {
 	'use strict';
 

@@ -55,3 +55,18 @@ export default {
     return axios.post("/api/auth/refresh-token", {accessToken: localStorage.getItem("accessToKen")})
   }
 }
+
+var myHeaders = new Headers();
+myHeaders.append("underwaterworldadmin", "abcd1234!");
+myHeaders.append("Authorization", "Bearer {{token}}");
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("https://partners.tripcarte.asia/wp-json/tripcarte_api/v2/redeem?barcode=5d9e8f8499f1b", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));

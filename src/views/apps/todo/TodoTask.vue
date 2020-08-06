@@ -17,7 +17,7 @@
                     <vs-checkbox v-model="isCompleted" class="w-8 m-0 vs-checkbox-small" @click.stop />
                     <h6 class="todo-title" :class="{'line-through': taskLocal.isCompleted}">{{ taskLocal.title }}</h6>
                   -->
-                    <vs-checkbox class="w-8 m-0 vs-checkbox-small" @click.stop />
+                    ⭐⭐⭐&nbsp;&nbsp;
                     <h6 class="todo-title">{{ review.product_name }}</h6>
                 </div>
                 <div class="todo-tags sm:ml-2 sm:my-0 my-2 flex">

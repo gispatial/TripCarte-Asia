@@ -11,6 +11,10 @@
 
 import Vue from 'vue'
 import App from './App.vue'
+import VueBarcode from 'vue-barcode'
+
+Vue.component('barcode', VueBarcode)
+
 
 // Vuesax Component Framework
 import Vuesax from 'vuesax'

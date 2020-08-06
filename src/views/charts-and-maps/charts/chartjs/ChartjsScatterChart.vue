@@ -9,7 +9,7 @@
 
 
 <template>
-    <vx-card title="Scatter Chart" class="" code-toggler>
+    <vx-card title="Finance Dashboard" class="" code-toggler>
 
         <div class="mt-5">
             <chartjs-component-scatter-chart :height=300 :data="data" :options="options"></chartjs-component-scatter-chart>
@@ -25,7 +25,7 @@ export default {
     return {
       data: {
         datasets: [{
-          label: &quot;My First dataset&quot;,
+          label: &quot;Total Reviews Collected &quot;,
           data: [{
             x: 65, y: 28,
           }, {

@@ -2,10 +2,10 @@
     File Name: picker-date-time.js
     Description: Pick a date/time Picker, Date Range Picker JS
     ----------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: Pixinvent
-    Author URL: hhttp://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+    Item Name: Tripcarte.Asia Dashboard Management Portal
+      Author: Tripcarte.Asia
+    Staging URL: http://tripcarte.gispatial.tech/api
+  ==========================================================================================*/
 (function(window, document, $) {
     'use strict';
 

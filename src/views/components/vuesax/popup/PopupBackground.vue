@@ -14,10 +14,9 @@
         <p>You can change the background of the property with the property <code>background-color</code> or if you want to change the color of the popup you can use the property <code>background-color-popup</code></p>
 
         <div class="demo-alignment">
-            <input v-model="colorx" type="color" name="" value="">
-            <vs-button text-color="rgba(0,0,0,0.5)" :color="colorx" @click="popupActive=true" type="filled">Open background popup</vs-button>
+            <vs-button text-color="rgba(0,0,0,0.5)" :color="colorx" @click="popupActive=true" type="filled">Go</vs-button>
 
-            <vs-popup background-color="rgba(152,152,152,.7)" :background-color-popup="colorx" class=""  title="Background" :active.sync="popupActive">
+            <vs-popup background-color="rgba(152,152,152,.7)" :background-color-popup="colorx" class=""  title="Scan QR Code" :active.sync="popupActive">
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </vs-popup>
         </div>

@@ -4,19 +4,19 @@ import mock from "@/fake-db/mock.js"
 let data = {
   tasks: [
     {
-      "id": 6445,
-      "title": "WHOLE DAY TOUR AT TAMAN BOTANI NEGARA SHAH ALAM",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id":  340,
+      "product_name": "UNDERWATER WORLD LANGKAWI",
+      "extra": "Good and knowledgeable.",
       "isImportant": true,
       "isStarred": true,
-      "tags": ["doc", "Family with Children"],
+      "suited": ["Family with Children"],
       "isCompleted": false,
       "isTrashed": false
     },
     {
-      "id": 11,
-      "title": "WHOLE DAY TOUR AT TAMAN BOTANI NEGARA SHAH ALAM",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id": 11,
+      "product_name": "WHOLE DAY TOUR AT TAMAN BOTANI NEGARA SHAH ALAM",
+      "extra": "Very clean, well maintained park, kids love it.",
       "isImportant": false,
       "isStarred": true,
       "tags": ["frontend", "doc"],
@@ -24,9 +24,9 @@ let data = {
       "isTrashed": false
     },
     {
-      "id": 15,
-      "title": "WHOLE DAY TOUR AT TAMAN BOTANI NEGARA SHAH ALAM",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id": 15,
+      "product_name": "WHOLE DAY TOUR AT TAMAN BOTANI NEGARA SHAH ALAM",
+      "extra": "Very clean, well maintained park, kids love it.",
       "isImportant": true,
       "isStarred": true,
       "tags": ["backend", "doc"],
@@ -34,9 +34,9 @@ let data = {
       "isTrashed": false
     },
     {
-      "id": 18,
-      "title": "WHOLE DAY TOUR AT TAMAN BOTANI NEGARA SHAH ALAM",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id": 18,
+      "product_name": "WHOLE DAY TOUR AT TAMAN BOTANI NEGARA SHAH ALAM",
+      "extra": "Very clean, well maintained park, kids love it.",
       "isImportant": false,
       "isStarred": false,
       "tags": ["bug"],
@@ -44,9 +44,9 @@ let data = {
       "isTrashed": false
     },
     {
-      "id": 340,
-      "title": "UNDERWATER WORLD LANGKAWI",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id": 340,
+      "product_name": "UNDERWATER WORLD LANGKAWI",
+      "extra": "Very clean, well maintained park, kids love it.",
       "isImportant": true,
       "isStarred": true,
       "tags": [],
@@ -54,9 +54,9 @@ let data = {
       "isTrashed": false
     },
     {
-      "id": 23,
-      "title": "UNDERWATER WORLD LANGKAWI",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id": 23,
+      "product_name": "UNDERWATER WORLD LANGKAWI",
+      "extra": "Very clean, well maintained park, kids love it.",
       "isImportant": true,
       "isStarred": true,
       "tags": ["frontend", "backend", "doc"],
@@ -64,9 +64,9 @@ let data = {
       "isTrashed": false
     },
     {
-      "id": 25,
-      "title": "UNDERWATER WORLD LANGKAWI",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id": 25,
+      "product_name": "UNDERWATER WORLD LANGKAWI",
+      "extra": "Very clean, well maintained park, kids love it.",
       "isImportant": true,
       "isStarred": false,
       "tags": [],
@@ -74,9 +74,9 @@ let data = {
       "isTrashed": true
     },
     {
-      "id": 28,
-      "title": "UNDERWATER WORLD LANGKAWI",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id": 28,
+      "product_name": "UNDERWATER WORLD LANGKAWI",
+      "extra": "Very clean, well maintained park, kids love it.",
       "isImportant": false,
       "isStarred": false,
       "tags": ["backend"],
@@ -84,9 +84,9 @@ let data = {
       "isTrashed": true
     },
     {
-      "id": 29,
-      "title": "UNDERWATER WORLD LANGKAWI",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id": 29,
+      "product_name": "UNDERWATER WORLD LANGKAWI",
+      "extra": "Very clean, well maintained park, kids love it.",
       "isImportant": false,
       "isStarred": false,
       "tags": [],
@@ -94,9 +94,9 @@ let data = {
       "isTrashed": true
     },
     {
-      "id": 340,
-      "title": "WHOLE DAY TOUR AT TAMAN BOTANI NEGARA SHAH ALAM",
-      "desc": "Very clean, well maintained park, kids love it.",
+      "product_id": 340,
+      "product_name": "WHOLE DAY TOUR AT TAMAN BOTANI NEGARA SHAH ALAM",
+      "extra": "Very clean, well maintained park, kids love it.",
       "isImportant": true,
       "isStarred": false,
       "tags": ["frontending"],
@@ -105,17 +105,17 @@ let data = {
     },
   ],
   taskTags: [
-    { id: 11,text: 'Spent less than 1 hour', value: 'bug', color: 'danger' },
-    { id: 5,text: 'Spent 1 hour' ,value : 'frontending', color: 'primary' },
-    { id: 7,text: 'Spent 2 hours', value: 'backend', color: 'warning'},
-    { id: 8,text: 'Spent 3 hours', value: 'doc', color: 'success'},
-    { id: 8,text: 'Spent 4 hours', value: 'doc', color: 'success'},
-    { id: 11,text: 'Spent more than 4 hours', value: 'bug', color: 'danger' },
-    { id: 11,text: 'Solo Traveler', value: 'bug', color: 'danger' },
-    { id: 5,text: 'Couple' ,value : 'frontending', color: 'primary' },
-    { id: 7,text: 'Family with Children', value: 'backend', color: 'warning'},
-    { id: 8,text: 'Group of Friends', value: 'doc', color: 'success'},
-    { id: 11,text: 'Company / Corporate', value: 'bug', color: 'danger' },
+    { product_id: 11,text: 'Spent less than 1 hour', value: 'underwater world', color: 'danger' },
+    { product_id: 5,text: 'Spent 1 hour' ,value : 'underwater world', color: 'primary' },
+    { product_id: 7,text: 'Spent 2 hours', value: 'underwater world', color: 'warning'},
+    { product_id: 8,text: 'Spent 3 hours', value: 'underwater world', color: 'success'},
+    { product_id: 8,text: 'Spent 4 hours', value: 'underwater world', color: 'success'},
+    { product_id: 11,text: 'Spent more than 4 hours', value: 'underwater world', color: 'danger' },
+    { product_id: 11,text: 'Solo Traveler', value: 'underwater world', color: 'danger' },
+    { product_id: 5,text: 'Couple' ,value : 'underwater world', color: 'primary' },
+    { product_id: 7,text: 'Family with Children', value: 'underwater world', color: 'warning'},
+    { product_id: 8,text: 'Group of Friends', value: 'underwater world', color: 'success'},
+    { product_id: 11,text: 'Company / Corporate', value: 'underwater world', color: 'danger' },
   ]
 }
 

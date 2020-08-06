@@ -2,10 +2,10 @@
     File Name: dropzone.js
     Description: dropzone
     --------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: PIXINVENT
-    Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+    Item Name: Tripcarte.Asia Dashboard Management Portal
+      Author: Tripcarte.Asia
+    Staging URL: http://tripcarte.gispatial.tech/api
+  ==========================================================================================*/
 
 Dropzone.options.dpzSingleFile = {
   paramName: "file", // The name that will be used to transfer the file

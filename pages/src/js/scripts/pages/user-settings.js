@@ -2,10 +2,10 @@
     File Name: user-settings.js
     Description: User Settings jQuery Plugin Intialization
     --------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: PIXINVENT
-    Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+    Item Name: Tripcarte.Asia Dashboard Management Portal
+      Author: Tripcarte.Asia
+    Staging URL: http://tripcarte.gispatial.tech/api
+  ==========================================================================================*/
 
 // profile picture upload
 Dropzone.options.profilePicUpload = {

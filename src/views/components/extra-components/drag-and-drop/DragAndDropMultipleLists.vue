@@ -9,14 +9,57 @@
 
 
 <template>
-  <div>
-    <p class="error">{{ error }}</p>
+    <div class="h-screen flex w-full bg-img vx-row no-gutter justify-center items-center">
+        <div class="vx-col sm:w-3/5 md:w-3/5 lg:w-3/4 xl:w-3/5 sm:m-0 m-4">
+            <vx-card>
+                <div slot="no-body" class="full-page-bg-color">
+                    <div class="vx-row no-gutter">
+                        <div class="vx-col hidden sm:hidden md:hidden lg:block lg:w-1/2 mx-auto self-center">
+                            <img src="@/assets/images/pages/bar.png" alt="barcode" class="mx-auto">
+                        </div>
+                        <div class="vx-col sm:w-full md:w-full lg:w-1/2 mx-auto self-center d-theme-dark-bg">
+                            <div class="p-8">
+                                <div class="vx-card__title mb-8">
+                                    <h4 class="mb-4">Barcode Camera</h4>
+                                </div>
+                                <div id="extra-component-drag-and-drop-demo">
 
-    <p class="decode-result">Last result: <b>{{ result }}</b></p>
+                                    <p class="mb-4">Point your barcode to camera scanner</p>
 
-    <qrcode-stream @decode="onDecode" @init="onInit" />
-  </div>
+                                    <drag-and-drop-multiple-lists></drag-and-drop-multiple-lists>
+                                </div>
+                                <div>
+                                  <p class="error">{{ error }}</p>
+
+                                  <p class="decode-result">Last result: <b>{{ result }}</b></p>
+
+                                  <qrcode-stream @decode="onDecode" @init="onInit" />
+                                </div>
+                                <div align="center"><div class="flex justify-between flex-wrap">
+                                    <router-link to="/dashboard/ecommerce" class="mb-4">
+                                    <vs-button class="ml-2">Cancel Scanning</vs-button></router-link>
+                                </div></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </vx-card>
+        </div>
+    </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            value1: '',
+            value2: ''
+        }
+    }
+}
+
+</script>
 
 <script>
 import { QrcodeStream } from 'vue-qrcode-reader'
@@ -59,7 +102,6 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 .error {
   font-weight: bold;

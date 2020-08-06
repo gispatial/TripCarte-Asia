@@ -9,7 +9,6 @@
 ========================================================================================== -->
 
 <template functional>
-    <vs-button color="danger" type="filled" class="buy-now" target :href="{url: '/apps/chat'}">Chat with Us</vs-button>
 </template>
 
 <style lang="scss">

@@ -22,17 +22,6 @@
         <vs-divider></vs-divider>
 
         <!-- starred -->
-        <div class="px-6 py-4">
-            <h5>Filters</h5>
-
-            <template v-for="filter in todoFilters">
-                <router-link tag="span" class="flex mt-6 cursor-pointer" :class="{'text-primary': todoFilter == filter.filter}" :to="`${baseUrl}/${filter.filter}`" :key="filter.filter">
-                    <feather-icon :icon="filter.icon" :svgClasses="[{'text-primary stroke-current': todoFilter == filter.filter}, 'h-6 w-6']"></feather-icon>
-                    <span class="text-lg ml-3">{{ filter.filterName }}</span>
-                </router-link>
-            </template>
-
-        </div>
 
         <vs-divider></vs-divider>
 

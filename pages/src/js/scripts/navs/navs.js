@@ -4,10 +4,10 @@
                  from the base .nav class to the active and disabled states.
                  Swap modifier classes to switch between each style.
     ----------------------------------------------------------------------------------------
-    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: PIXINVENT
-    Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+    Item Name: Tripcarte.Asia Dashboard Management Portal
+      Author: Tripcarte.Asia
+    Staging URL: http://tripcarte.gispatial.tech/api
+  ==========================================================================================*/
 (function(window, document, $) {
     'use strict';
 

@@ -42,16 +42,16 @@ export default {
         .catch((error) => { reject(error) })
     })
   },
-  // fetchEventLabels({ commit }) {
-  //   return new Promise((resolve, reject) => {
-  //     axios.get("/api/apps/calendar/labels")
-  //       .then((response) => {
-  //         commit('SET_LABELS', response.data)
-  //         resolve(response)
-  //       })
-  //       .catch((error) => { reject(error) })
-  //   })
-  // },
+  getQR({commit}, barcode) {
+    return new Promise((resolve, reject) => {
+      axios.get("/api/data-list/products/${barcode}",  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } } )
+        .then(res => {
+          commit('SET_QR', res.data)
+          resolve(res)
+        })
+        .catch((error) => { reject(error) })
+    })
+  },
   updateItem({ commit }, item) {
     return new Promise((resolve, reject) => {
       axios.post(`/api/data-list/products/${item.id}`, {item: item})

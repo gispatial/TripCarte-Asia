@@ -9,7 +9,7 @@
 
 <template>
     <div id="extra-component-echarts-demo">
-        <p class="mb-4">ECharts component for Vue.js. Read full documnetation <a href="https://github.com/ecomfe/vue-echarts" target="_blank" rel="nofollow">here</a></p>
+        <p class="mb-4">DASBOARD HOMEPAGE</p>
 
         <div class="vx-row match-height">
             <div class="vx-col w-full">

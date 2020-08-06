@@ -3,8 +3,8 @@
     Description: Invoice Page
     ----------------------------------------------------------------------------------------
     Item Name: Tripcarte.Asia Dashboard Management Portal
-      Author: Tripcarte.Asia
-    Author URL: http://www.tripcarte.asia/
+    Author: Netquest
+    Author URL: http://demo.tripcarte.asia/
 ========================================================================================== -->
 
 

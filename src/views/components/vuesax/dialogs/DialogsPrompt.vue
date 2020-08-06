@@ -4,40 +4,47 @@
 	----------------------------------------------------------------------------------------
 	Item Name: Tripcarte.Asia Dashboard Management Portal
 	Author: Pixinvent
-	Author URL: http://www.themeforest.net/user/pixinvent
+	Author URL: http://
 ========================================================================================== -->
 
 
 <template>
-	<vx-card title="Prompt" code-toggler>
+	<vx-card title="Scan QR code">
 
-		<p>To add a dialog of type prompt we have a global function a completely independent component <code>vs-prompt</code>. This allows more flexibility with the input and ability to add any type of input and components</p>
-
-		<div class="my-3">
-			<span>The properties of the component are equivalent to those of the global function only with the vs before each property something like</span>
-			<vx-list :list='["function: color", "component = vsColor"]'></vx-list>
-		</div>
+		<p>
 
 		<div class="demo-alignment">
-			<vs-button @click="activePrompt = true" color="primary" type="border">Run prompt</vs-button>
-			<vs-button @click="activePrompt2 = true" color="primary" type="border">Run prompt inputs</vs-button>
-			<div class="op-block">Security Code: {{ val == null ? 'null' : val }}</div>
-			<div class="op-block">
-				Name: {{valMultipe.value1}} |
-				Last Name: {{valMultipe.value2}}
-			</div>
+		<vs-button @click="activePrompt = true" color="primary" type="border">Start Scanning</vs-button>
+		<div class="vx-col w-full sm:w-1/1 md:w-1/1 lg:w-1/1 xl:w-1/1 mb-base">
+    <div>
+		<h5>Or</h5>
+		</div>
+		<div class="demo-alignment"></span
+		<barcode v-model="code"></barcode>
+		<div class="con-exemple-prompt"><vs-input placeholder="Enter barcode" vs-placeholder="Enter barcode" v-model="code" class="mt-3 w-full" />
+
+		<vs-button @click="activePrompt2 = true" color="primary" type="border">Go</vs-button>
+		</div>
+		</div>
 
 		</div>
 
+		<div>
+		<p>
+		</p>
+  </div>
+  <div><div class="op-block">Results: {{ val == null ? 'null' : code }}</div>
+  </div>
+</div>
+
 		<vs-prompt
-			@cancel="val=''"
-			@accept="acceptAlert"
 			@close="close"
 			:active.sync="activePrompt">
-			<div class="con-exemple-prompt">
-				<span>Enter the security code</span>
-			<vs-input placeholder="Code" vs-placeholder="Code" v-model="val" class="mt-3 w-full" />
-			</div>
+					<div class="p-8">
+					<iframe src="/components/tabs" frameborder="0" width="328" height="490" scrolling="auto">
+			</iframe>
+					</div>
+
 		</vs-prompt>
 
 		<vs-prompt
@@ -46,13 +53,14 @@
 			@close="close"
 			:is-valid="validName"
 			:active.sync="activePrompt2">
-			<div class="con-exemple-prompt">
-				Enter your first and last name to <b>continue</b>.
-			<vs-input placeholder="Name" v-model="valMultipe.value1" class="mt-4 mb-2 w-full" />
-			<vs-input placeholder="Last Name" v-model="valMultipe.value2" class="w-full" />
-
+			<div class="">
+				Scan your barcode now to <b>continue</b>
 			<vs-alert :active="!validName" color="danger" vs-icon="new_releases" class="mt-4" >
-				Fields can not be empty please enter the data
+
+			<label>Result:</label>
+			<barcode v-model="code" :options="options"></barcode>
+<div>
+</div>
 			</vs-alert>
 			</div>
 		</vs-prompt>
@@ -71,7 +79,6 @@
 
     &lt;vs-prompt
       @cancel=&quot;val=''&quot;
-      @accept=&quot;acceptAlert&quot;
       @close=&quot;close&quot;
       :active.sync=&quot;activePrompt&quot;&gt;
       &lt;div class=&quot;con-exemple-prompt&quot;&gt;
@@ -82,7 +89,6 @@
 
     &lt;vs-prompt
       @cancel=&quot;clearValMultiple&quot;
-      @accept=&quot;acceptAlert&quot;
       @close=&quot;close&quot;
       :is-valid=&quot;validName&quot;
       :active.sync=&quot;activePrompt2&quot;&gt;
@@ -117,13 +123,24 @@ export default {
     }
   },
   methods:{
-    acceptAlert(){
-      this.$vs.notify({
-        color:'success',
-        title:'Accept Selected',
-        text:'Lorem ipsum dolor sit amet, consectetur'
-      })
-    },
+async onDetect (promise) {
+	try {
+		const {
+			imageData,
+			content,
+			location
+		} = await promise
+
+		if (content === null) {
+			 // decoded nothing
+		} else {
+			 // ...
+		}
+	} catch (error) {
+		// ...
+	}
+}
+},
     close(){
       this.$vs.notify({
         color:'danger',
@@ -143,7 +160,38 @@ export default {
 	</vx-card>
 </template>
 
+
 <script>
+    module.exports = {
+      data: function () {
+        return {
+          scanned: ''
+        }
+      },
+      methods: {
+        codeScanned (event) {
+          this.scanned = event.detail[0];
+        }
+      }
+    }
+</script>
+		<script>
+		export default {
+		  data() {
+		    return {
+		      colorx:"#F57E7E",
+		      popupActive: false,
+		    }
+		  }
+		}
+		</script>
+
+<script>
+import Vue from 'vue'
+import VueBarcodeScanner from 'vue-barcode-scanner'
+
+Vue.use(VueBarcodeScanner)
+
 export default {
   data(){
     return {
@@ -165,15 +213,15 @@ export default {
     acceptAlert(){
       this.$vs.notify({
         color:'success',
-        title:'Accept Selected',
-        text:'Lorem ipsum dolor sit amet, consectetur'
+        title:'Scan Accepted',
+        text:'Please check your status'
       })
     },
     close(){
       this.$vs.notify({
         color:'danger',
         title:'Closed',
-        text:'You close a dialog!'
+        text:'You close the scanner | qrcode'
       })
     },
     clearValMultiple() {
@@ -182,4 +230,156 @@ export default {
     }
   }
 }
+</script>
+
+
+import { QrcodeStream } from 'vue-qrcode-reader'
+
+export default {
+
+  components: { QrcodeStream },
+
+  data () {
+    return {
+      result: '',
+      error: ''
+    }
+  },
+
+  methods: {
+    onDecode (result) {
+      this.result = result
+    },
+
+    async onInit (promise) {
+      try {
+        await promise
+      } catch (error) {
+        if (error.name === 'NotAllowedError') {
+          this.error = "ERROR: you need to grant camera access permisson"
+        } else if (error.name === 'NotFoundError') {
+          this.error = "ERROR: no camera on this device"
+        } else if (error.name === 'NotSupportedError') {
+          this.error = "ERROR: secure context required (HTTPS, localhost)"
+        } else if (error.name === 'NotReadableError') {
+          this.error = "ERROR: is the camera already in use?"
+        } else if (error.name === 'OverconstrainedError') {
+          this.error = "ERROR: installed cameras are not suitable"
+        } else if (error.name === 'StreamApiNotSupportedError') {
+          this.error = "ERROR: Stream API is not supported in this browser"
+        }
+      }
+    }
+  }
+}
+
+Quagga.init({
+    inputStream : {
+      name : "Live",
+      type : "LiveStream",
+      target: document.querySelector('#yourElement')    /
+    },
+    decoder : {
+      readers : ["code_128_reader"]
+    }
+  }, function(err) {
+      if (err) {
+          console.log(err);
+          return
+      }
+      console.log("Initialization finished. Ready to start");
+      Quagga.start();
+  });
+
+	const imgSrc = '01.png';
+const imgDomId = 'img-to-decode';
+
+codeReader
+  .decodeFromImage(imgDomId, imgSrc)
+  .then(result => console.log(result.text))
+  .catch(err => console.error(err));
+
+
+	const codeReader = new ZXing.BrowserQRCodeReader();
+const videoSrc = 'your url to a video';
+
+codeReader
+  .decodeFromVideo('video', videoSrc)
+  .then(result => console.log(result.text))
+  .catch(err => console.error(err));
+
+
+	export default {
+    data: () => ({
+      loading: false
+    }),
+    created () {
+      // Pass an options object with `eventBus: true` to receive an eventBus back
+      // which emits `start` and `finish` events
+      const eventBus = this.$barcodeScanner.init(this.onBarcodeScanned, { eventBus: true })
+      if (eventBus) {
+        eventBus.$on('start', () => { this.loading = true })
+        eventBus.$on('finish', () => { this.loading = false })
+      }
+    },
+    destroyed () {
+      // Remove listener when component is destroyed
+      this.$barcodeScanner.destroy()
+    },
+    methods: {
+      // Create callback function to receive barcode when the scanner is already done
+      onBarcodeScanned (barcode) {
+        console.log(barcode)
+        // do something...
+      },
+      // Reset to the last barcode before hitting enter (whatever anything in the input box)
+      resetBarcode () {
+        let barcode = this.$barcodeScanner.getPreviousCode()
+        // do something...
+      }
+    }
+  }
+
+	Vue.component(tuiVueBarcode.name, tuiVueBarcode);
+
+const app = new Vue({
+  el:'#app',
+  data() {
+    return {
+      code: 'lorem ipsum',
+      height: 100
+    }
+  },
+  computed: {
+    options() {
+      return {
+        height: this.height
+      }
+    }
+  }
+})
+
+data () {
+  return {
+    camera: 'auto'
+  }
+},
+
+methods: {
+  startFrontCamera () {
+    this.camera = 'front'
+  },
+
+  onCameraChange (promise) {
+    promise.catch(error => {
+      const cameraMissingError = error.name === 'OverconstrainedError'
+      const triedFrontCamera = this.camera === 'front'
+
+      if (triedFrontCamera && cameraMissingError) {
+      }
+    })
+  }
+},
+
+
 </script>
