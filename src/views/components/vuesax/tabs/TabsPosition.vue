@@ -51,16 +51,9 @@ export default {
       error: ''
     }
   },
-  /*
-  mounted: function() {
-    axios.post('https://partners.tripcarte.asia/wp-json/tripcarte_api/v2/redeem/',{ barcode: this.barcode },  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } })
-    .then(response => this.posts = response.data );
-  },
-  */
 
   methods: {
     barcodesearch() {
-      //this.mounted = code
       axios.post('https://partners.tripcarte.asia/wp-json/tripcarte_api/v2/redeem/',{ barcode: this.barcode },  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } })
                   .then( (response) => this.posts = response.data )
                   .catch(error => this.posts = [{order_id: 'Invalid Barcode!'}]);
