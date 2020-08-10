@@ -214,6 +214,73 @@ Tripcarte Dashboard Portal Admin comes with useful third party plug-ins to help 
 <li><a href="https://github.com/leonardovilarinho/vue-acl" target="_blank" rel="noopener noreferrer">Vue ACL</a></li>
 </ul>
 
+## Files Structure
+
+<pre class="language-text"><code>vuexy-vx.x/
+│
+├── public/
+│   ├── favicon.ico
+│   ├── logo.png
+│   ├── loader.css                          -&gt; Initial Loader CSS
+│   └── index.html                          -&gt; Main HTML
+│
+├── src/
+│   ├── acl/                                -&gt; Aceess Control
+│   │                             
+│   ├── assets/
+│   |    ├── css/                           -&gt; Tailwind, Feather &amp; Loader CSS
+│   |    ├── fonts/                         -&gt; Feather Font Icons
+│   |    ├── images/
+│   |    ├── scss/							-&gt; Template SCSS files, check folder structure below
+│   |    └── utils/							-&gt; utilities folder
+│   │
+│   ├── auth/                               -&gt; Auth0 Service
+│   ├── components/                         -&gt; Vuexy Admin custom components
+│   ├── fake-db/         				    -&gt; Fake Database for mocking axios requests (Fake API Calls)
+│   ├── filters/                            -&gt; VueJS filters
+│   ├── firebase/                           -&gt; firebase config
+│   ├── http/                               -&gt; Axios Mock Adapter Requests
+│   ├── i18n/         					    -&gt; I18n
+│   │
+│   ├── layouts/            				
+│   │    │
+│   |    ├── components/					-&gt; Layout components
+│   |    |    ├── customizer/				-&gt; Customizer component
+│   |    |    ├── horizontal-nav-menu/      -&gt; Nav-Menu Component for Horizontal layout
+│   |    |    ├── Navbar/		            -&gt; Navbar Components for Vertical &amp; Horizontal Layout + Fuzzy Search Items
+│   |    |    ├── vertical-nav-menu/        -&gt; Nav-Menu Component for Vertical layout (Previously VxSidebar)
+│   |    |    ├── vx-tooltip/               -&gt; Extended Tooltip Component (vx-tooltip)
+│   |    |    ├── Logo.vue				    -&gt; Logo Component For Dynamic Color
+│   |    |    ├── TheFooter.vue             -&gt; Footer Component
+│   |    |    └── VxBreadcrumb.vue			-&gt; Breadcrumb Component
+│   │    │
+│   |    ├── full-page/						-&gt; Full page layout for pages like login
+│   |    └── main/							-&gt; Main layout
+│   │
+│   ├── plugins/         					-&gt; theme plugins (auth0 currently)
+│   ├── store/                              -&gt; Vuex Store
+│   ├── vendor/              				-&gt; Vendor files
+│   ├── views/              				-&gt; View files for all pages
+│   ├── App.vue                             -&gt; Application main vue file
+│   ├── axios.js             				-&gt; axios (configuration) file
+│   ├── globalComponents.js 				-&gt; Gloablly registered components
+│   ├── main.js            					-&gt; Application main js file
+│   └── router.js   						-&gt; router file
+│
+├── .browserlistrc                          -&gt; Browser support
+├── .editorconfig			                -&gt; Editor configuration file
+├── .eslintrc.js                            -&gt; ESLint Configuration
+├── .gitignore  			                -&gt; gitignore
+├── auth_config.json	               		-&gt; Auth0 credentials
+├── babel.config.js                         -&gt; Babel configuration
+├── package.json                            -&gt; Package json
+├── postcss.config.js		                -&gt; postcss configuration
+├── README.md                               -&gt; Readme
+├── tailwind-v0.js			                -&gt; v0.x Tailwind configuration
+├── tailwind.config.js                      -&gt; Tailwind configuration
+├── themeConfig.js			                -&gt; Vuexy Admin configuration
+└── vue.config.js			                -&gt; VueJS configuration</code></pre>
+
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
