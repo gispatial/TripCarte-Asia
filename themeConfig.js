@@ -4,7 +4,7 @@
   ----------------------------------------------------------------------------------------
 	Item Name: Tripcarte.Asia Dashboard Management Portal
 	Author: Tripcarte.Asia
-	Author URL: http://tripcarte.asia/
+	Github URL: https://github.com/gispatial/tripcarte-asia/
 ==========================================================================================*/
 
 // MAIN COLORS - TC_ASIA THEME COLORS

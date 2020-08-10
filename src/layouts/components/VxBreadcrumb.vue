@@ -5,7 +5,7 @@
     ----------------------------------------------------------------------------------------
     Item Name: Tripcarte.Asia Dashboard Management Portal
     Developer: Tripcarte Development Team
-    Author URL: http://tripcarte.asia/
+    Github URL: https://github.com/gispatial/tripcarte-asia/
 ========================================================================================== -->
 
 

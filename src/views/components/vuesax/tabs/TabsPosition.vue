@@ -4,7 +4,7 @@
     ----------------------------------------------------------------------------------------
     Item Name: Tripcarte.Asia Dashboard Management Portal
     Author: Netquest
-    Author URL: http://demo.tripcarte.asia/
+    Github URL: https://github.com/gispatial/tripcarte-asia/
 ========================================================================================== -->
 
 <template>
