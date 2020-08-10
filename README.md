@@ -216,7 +216,7 @@ Tripcarte Dashboard Portal Admin comes with useful third party plug-ins to help 
 
 ## Files Structure
 
-<pre class="language-text"><code>vuexy-vx.x/
+<pre class="language-text"><code>tdmp-merchants/
 │
 ├── public/
 │   ├── favicon.ico
