@@ -48,6 +48,10 @@ export default {
                   .then( (response) => this.posts = response.data )
                   .catch(error => this.posts = [{order_id: 'Invalid Barcode!'}]);
     },*/
+<<<<<<< HEAD
+=======
+
+>>>>>>> 541988be3afbcf0fb568f83235a4482f57c78674
     onDecode (result) {
       //this.result = result
       axios.post('https://partners.tripcarte.asia/wp-json/tripcarte_api/v2/redeem/',{ barcode: result },  { headers: { 'Authorization': `Bearer ${localStorage.getItem("accessToken")}` } })
