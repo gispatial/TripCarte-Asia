@@ -15,7 +15,7 @@
       icon: "ListIcon",
     },
     {
-        url: '/ui-elements/ag-grid-table',
+        url: '/ui-tripcarte/ag-grid-table',
         name: "Payouts",
         slug: "dashboard-analytics",
         i18n: "PAYOUTS",

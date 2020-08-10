@@ -232,9 +232,9 @@ const router = new Router({
         // UI ELEMENTS
         // =============================================================================
                 {
-                    path: '/ui-elements/data-list/list-view',
+                    path: '/ui-tripcarte/data-list/list-view',
                     name: 'data-list-list-view',
-                    component: () => import('@/views/ui-elements/data-list/list-view/DataListListView.vue'),
+                    component: () => import('@/views/ui-tripcarte/data-list/list-view/DataListListView.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -246,9 +246,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/data-list/thumb-view',
+                    path: '/ui-tripcarte/data-list/thumb-view',
                     name: 'data-list-thumb-view',
-                    component: () => import('@/views/ui-elements/data-list/thumb-view/DataListThumbView.vue'),
+                    component: () => import('@/views/ui-tripcarte/data-list/thumb-view/DataListThumbView.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -260,9 +260,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/grid/vuesax',
+                    path: '/ui-tripcarte/grid/vuesax',
                     name: 'grid-vuesax',
-                    component: () => import('@/views/ui-elements/grid/vuesax/GridVuesax.vue'),
+                    component: () => import('@/views/ui-tripcarte/grid/vuesax/GridVuesax.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -274,9 +274,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/grid/tailwind',
+                    path: '/ui-tripcarte/grid/tailwind',
                     name: 'grid-tailwind',
-                    component: () => import('@/views/ui-elements/grid/tailwind/GridTailwind.vue'),
+                    component: () => import('@/views/ui-tripcarte/grid/tailwind/GridTailwind.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -288,9 +288,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/colors',
+                    path: '/ui-tripcarte/colors',
                     name: 'colors',
-                    component: () => import('./views/ui-elements/colors/Colors.vue'),
+                    component: () => import('./views/ui-tripcarte/colors/Colors.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -301,9 +301,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/card/basic',
+                    path: '/ui-tripcarte/card/basic',
                     name: 'basic-cards',
-                    component: () => import('./views/ui-elements/card/CardBasic.vue'),
+                    component: () => import('./views/ui-tripcarte/card/CardBasic.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -315,9 +315,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/card/statistics',
+                    path: '/ui-tripcarte/card/statistics',
                     name: 'statistics-cards',
-                    component: () => import('./views/ui-elements/card/CardStatistics.vue'),
+                    component: () => import('./views/ui-tripcarte/card/CardStatistics.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -329,9 +329,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/card/analytics',
+                    path: '/ui-tripcarte/card/analytics',
                     name: 'analytics-cards',
-                    component: () => import('./views/ui-elements/card/CardAnalytics.vue'),
+                    component: () => import('./views/ui-tripcarte/card/CardAnalytics.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -343,9 +343,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/card/card-actions',
+                    path: '/ui-tripcarte/card/card-actions',
                     name: 'card-actions',
-                    component: () => import('./views/ui-elements/card/CardActions.vue'),
+                    component: () => import('./views/ui-tripcarte/card/CardActions.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -357,9 +357,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/card/card-colors',
+                    path: '/ui-tripcarte/card/card-colors',
                     name: 'card-colors',
-                    component: () => import('./views/ui-elements/card/CardColors.vue'),
+                    component: () => import('./views/ui-tripcarte/card/CardColors.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -371,9 +371,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/table',
+                    path: '/ui-tripcarte/table',
                     name: 'table',
-                    component: () => import('./views/ui-elements/table/Table.vue'),
+                    component: () => import('./views/ui-tripcarte/table/Table.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
@@ -384,9 +384,9 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/ui-elements/ag-grid-table',
+                    path: '/ui-tripcarte/ag-grid-table',
                     name: 'ag-grid-table',
-                    component: () => import('./views/ui-elements/commissions/AgGridTable.vue'),
+                    component: () => import('./views/ui-tripcarte/commissions/AgGridTable.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },

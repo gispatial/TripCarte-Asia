@@ -34,7 +34,7 @@ export default [
     i18n: "ADMINISTRATION PANEL",
     items: [
     {
-      url: '/ui-elements/card/statistics',
+      url: '/ui-tripcarte/card/statistics',
       name: "DASHBOARD",
       slug: "colors",
       icon: "MonitorIcon",
@@ -42,14 +42,14 @@ export default [
       tagColor: "dark"
     },
     {
-      url: '/ui-elements/ag-grid-table',
+      url: '/ui-tripcarte/ag-grid-table',
       name: "PAYOUTS",
       tagColor: "primary",
       icon: "DollarSignIcon",
       i18n: "PAYOUTS",
     },
     {
-      url: '/ui-elements/data-list/list-view',
+      url: '/ui-tripcarte/data-list/list-view',
       name: "REDEMPTIONS",
       tagColor: "primary",
       icon: "AwardIcon",
@@ -82,7 +82,7 @@ export default [
           //   ]
           // },
           {
-            url: "/ui-elements/card/statistics",
+            url: "/ui-tripcarte/card/statistics",
             name: "Dashboard",
             icon: "HomeIcon",
             slug: "import",

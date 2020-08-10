@@ -31,7 +31,7 @@
             </div>
 
             <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
-            <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="/ui-elements/ag-grid-table">Details</vs-button>
+            <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="/ui-tripcarte/ag-grid-table">Details</vs-button>
                 <statistics-card-line icon="LayersIcon" statisticTitle="Total Redemption this week - 350 tickets .+1"></statistics-card-line>
             </div>
 
@@ -71,7 +71,7 @@
 <script>
 import VueApexCharts from 'vue-apexcharts'
 import StatisticsCardLine from '@/components/statistics-cards/StatisticsCardLine.vue'
-import analyticsData from './ui-elements/card/analyticsData.js'
+import analyticsData from './ui-tripcarte/card/analyticsData.js'
 import ChangeTimeDurationDropdown from '@/components/ChangeTimeDurationDropdown.vue'
 import VxTimeline from "@/components/timeline/VxTimeline"
 

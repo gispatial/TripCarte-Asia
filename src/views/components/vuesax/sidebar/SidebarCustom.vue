@@ -40,7 +40,7 @@ export default {
         i18n: &quot;Dashboard&quot;,
       },
       {
-        url: &quot;/ui-elements/colors&quot;,
+        url: &quot;/ui-tripcarte/colors&quot;,
         name: &quot;Colors&quot;,
         slug: &quot;colors&quot;,
         icon: &quot;DropletIcon&quot;,

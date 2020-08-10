@@ -21,7 +21,7 @@
 
       <!-- CARD 3: ORDER RECEIVED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
-      <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="/ui-elements/ag-grid-table">View Details</vs-button>
+      <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4" href="/ui-tripcarte/ag-grid-table">View Details</vs-button>
         <statistics-card-line icon="ShoppingBagIcon" statistic="6 tickets.+ 15% " statisticTitle="Total Redemption this Week" :chartData="ordersRecevied.series" color='warning' type='area'></statistics-card-line>
       </div>
 
@@ -65,7 +65,7 @@
 <script>
 import VueApexCharts from 'vue-apexcharts'
 import StatisticsCardLine from '@/components/statistics-cards/StatisticsCardLine.vue'
-import analyticsData from './ui-elements/card/analyticsData.js'
+import analyticsData from './ui-tripcarte/card/analyticsData.js'
 import ChangeTimeDurationDropdown from '@/components/ChangeTimeDurationDropdown.vue'
 import VxTimeline from "@/components/timeline/VxTimeline"
 
