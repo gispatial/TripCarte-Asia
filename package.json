@@ -20,7 +20,7 @@
     "babel-loader": "^8.1.0",
     "bn.js": "^5.1.2",
     "cache-loader": "^4.1.0",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "core-js": "^2.6.11",
     "echarts": "^4.8.0",
     "file-saver": "2.0.1",
